@@ -1,0 +1,362 @@
+dbg> Get-Cookie theme:dark
+dbg> Get-Cookie session:2c867ed19a0b0502c13658b44f66529f27ecadec
+--------------------------------------------------------------------------------
+status: 200
+Content-type: text/html
+Set-Cookie: session=2c867ed19a0b0502c13658b44f66529f27ecadec; Path=/; SameSite=strict; Max-Age=3600
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Buttons</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+<body>
+  <h1>Buttons sample 2</h1>
+  <button type="button" id="button1" data-document="wdocmain" onclick="(function(e){alert( 'Click!' );})()">This button fires a inline Javascript code</button>
+  <p></p>
+  <button type="button" id="button2" data-document="wdocmain" onclick="myfunction">This button fires a Javascript user function</button>
+  <p></p>
+  <button type="button" id="button3" onclick='xw_fetch( "mycity", "button3", "citySolver", "http://ip-api.com/json/Oz Software",{"method":"GET","headers": {"Content-type":"application/json"}});'>This button calls an asyncronous API</button>
+  <span id="mycity">Where is Xailer web site server?</span>
+  </span>
+  <p>Please push this button after pushing the previous one</p>
+  <button type="button" id="button4" data-document="wdocmain" onclick="@xw_click">This button fires a CGI XailerWeb event</button>
+  <p>Insert some text on this field and confirm it does NOT disappear when pushing the previous button.</p>
+  <label for="myEdit">Label:</label>
+  <input type="text" name="myEdit" id="myEdit">
+  <p></p>
+  <button type="button" id="btnsource" data-document="wdocmain" onclick="showCode">This button shows XailerWeb source code</button>
+  <p><hr></p>
+  <label for="source" hidden>Source:</label>
+  <textarea rows="40" cols="80" readonly id="source" hidden>Ly8gaHR0cDovL3Rlc3QueGFpbGVyLmNvbS9jZ2ktYmluL3hhaWxlcndlYi9idXR0b25zLmNnaQ0KLy8gaHR0cHM6Ly90ZXN0LnhhaWxlci5jb20vY2dpLWJpbi94YWlsZXJ3ZWIvYnV0dG9ucy5jZ2kNCg0KI2luY2x1ZGUgIlhhaWxlcldlYi5jaCINCg0KQ0xBU1MgV0RvY01haW4gRlJPTSBXRG9jDQoNCiAgIE1FVEhPRCBDcmVhdGVEb2MoKQ0KDQogICBNRVRIT0QgeHdfQ2xpY2soIGhFdmVudCApDQoNCkVORCBDTEFTUw0KDQpNRVRIT0QgQ3JlYXRlRG9jKCkgQ0xBU1MgV0RvY01haW4NCg0KICAgTE9DQUwgb0ZldGNoDQogICBMT0NBTCBjSnMsIGNVcmwsIGNDb2RlDQoNCiAgIFRFWFQgSU5UTyBjSnMNCiAgICAgIGZ1bmN0aW9uIG15ZnVuY3Rpb24oZSkgew0KICAgICAgICAgYWxlcnQoICdDbGljayB0cmlnZ2VyZWQgZnJvbSBhIHVzZXIgZnVuY3Rpb24nICk7DQogICAgICB9DQoNCiAgICAgIGZ1bmN0aW9uIGNpdHlTb2x2ZXIoZWxlbWVudCwgZGF0YSkgew0KICAgICAgICAgaWYgKGRhdGEuY2l0eSkgew0KICAgICAgICAgICAgIGVsZW1lbnQuaW5uZXJIVE1MID0gJ1hhaWxlciBzZXJ2ZXIgaXMgYXQgJyArIGRhdGEuY2l0eTsNCiAgICAgICAgICAgICB4d19zZXRIYkRhdGEoZWxlbWVudCwgJ2NUZXh0JywgZWxlbWVudC5pbm5lclRleHQpOw0KICAgICAgICAgfQ0KICAgICAgICAgZWxzZQ0KICAgICAgICAgICAgZWxlbWVudC5pbm5lckhUTUwgPSAnQ2l0eSBjb3VsZCBub3QgYmUgZm91bmQnOw0KICAgICAgfQ0KDQogICAgICBmdW5jdGlvbiBzaG93Q29kZSgpIHsNCiAgICAgICAgIGNvbnN0IGVsZSA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJzb3VyY2UiKTsNCiAgICAgICAgIGlmIChlbGUpIHsNCiAgICAgICAgICAgIGVsZS52YWx1ZSA9IGF0b2IoZWxlLnZhbHVlKTsNCiAgICAgICAgICAgIGVsZS5oaWRkZW4gPSBmYWxzZTsNCiAgICAgICAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJidG5zb3VyY2UiKS5kaXNhYmxlZCA9IHRydWU7DQogICAgICAgICB9DQogICAgICB9DQogICBFTkRURVhUDQoNCiAgIEVuZ2luZTpjTG9nRmlsZSA6PSAiL21udC9jL3hhaWxlcndlYi9zYW1wbGVzLzAyLWJ1dHRvbnMvZXJyb3IubG9nIg0KICAgRW5naW5lOmxEZWJ1ZyA6PSAudC4NCg0KICAgV0lUSCBPQkpFQ1QgV1RleHQoKTpOZXcoIFNlbGYgKQ0KICAgICAgOmNUZXh0IDo9ICI8aDE+QnV0dG9ucyBzYW1wbGUgMjwvaDE+Ig0KICAgICAgOkNyZWF0ZSgpDQogICBFTkQgV0lUSA0KDQogICBXSVRIIE9CSkVDVCBXQnV0dG9uKCk6TmV3KCBTZWxmICkNCiAgICAgIDpjVGV4dCA6PSAiVGhpcyBidXR0b24gZmlyZXMgYSBpbmxpbmUgSmF2YXNjcmlwdCBjb2RlIg0KICAgICAgOk9uQ2xpY2sgOj0gIjxzY3JpcHQ+YWxlcnQoICdDbGljayEnICk8L3NjcmlwdD4iDQogICAgICA6Y0lkIDo9ICJidXR0b24xIg0KICAgICAgOkNyZWF0ZSgpDQogICBFTkQgV0lUSA0KDQogICBXVGV4dCgpOk5ldyggU2VsZiApOmNUZXh0IDo9ICI8cD48L3A+Ig0KDQogICBXSVRIIE9CSkVDVCBXQnV0dG9uKCk6TmV3KCBTZWxmICkNCiAgICAgIDpjVGV4dCA6PSAiVGhpcyBidXR0b24gZmlyZXMgYSBKYXZhc2NyaXB0IHVzZXIgZnVuY3Rpb24iDQogICAgICA6T25DbGljayA6PSAibXlmdW5jdGlvbiINCiAgICAgIDpjSWQgOj0gImJ1dHRvbjIiDQogICAgICA6Q3JlYXRlKCkNCiAgIEVORCBXSVRIDQoNCiAgIFdUZXh0KCk6TmV3KCBTZWxmICk6Y1RleHQgOj0gIjxwPjwvcD4iDQoNCiAgIElGIEVuZ2luZTpJc1NlY3VyZSgpDQogICAgICBjVXJsIDo9ICJodHRwczovL2lwaW5mby5pby8zOC4yNDIuMjAzLjE4MC9qc29uIg0KICAgRUxTRQ0KICAgICAgY1VybCA6PSAiaHR0cDovL2lwLWFwaS5jb20vanNvbi94YWlsZXIuY29tIg0KICAgRU5ESUYNCg0KICAgb0ZldGNoIDo9IFdGZXRjaCgpOk5ldyggY1VybCwgIm15Y2l0eSIsICJidXR0b24zIiApDQogICBvRmV0Y2g6Y0NhbGxCYWNrIDo9ICJjaXR5U29sdmVyIg0KDQogICBXSVRIIE9CSkVDVCBXQnV0dG9uKCk6TmV3KCBTZWxmICkNCiAgICAgIDpjVGV4dCA6PSAiVGhpcyBidXR0b24gY2FsbHMgYW4gYXN5bmNyb25vdXMgQVBJIg0KICAgICAgOk9uQ2xpY2sgOj0gb0ZldGNoDQogICAgICA6Y0lkIDo9ICJidXR0b24zIg0KICAgICAgOkNyZWF0ZSgpDQogICBFTkQgV0lUSA0KDQogICBXSVRIIE9CSkVDVCBXVGV4dCgpOk5ldyggU2VsZiApDQogICAgICA6Y1RleHQgOj0gIldoZXJlIGlzIFhhaWxlciB3ZWIgc2l0ZSBzZXJ2ZXI/Ig0KICAgICAgOmNJZCA6PSAibXljaXR5Ig0KICAgICAgOkNyZWF0ZSgpDQogICBFTkQgV0lUSA0KDQogICBXVGV4dCgpOk5ldyggU2VsZiApOmNUZXh0IDo9ICI8cD5QbGVhc2UgcHVzaCB0aGlzIGJ1dHRvbiBhZnRlciBwdXNoaW5nIHRoZSBwcmV2aW91cyBvbmU8L3A+Ig0KDQogICBXSVRIIE9CSkVDVCBXQnV0dG9uKCk6TmV3KCBTZWxmICkNCiAgICAgIDpjVGV4dCA6PSAiVGhpcyBidXR0b24gZmlyZXMgYSBDR0kgWGFpbGVyV2ViIGV2ZW50Ig0KICAgICAgOk9uQ2xpY2sgOj0gInh3X2NsaWNrIg0KICAgICAgOmNJZCA6PSAiYnV0dG9uNCINCiAgICAgIDpDcmVhdGUoKQ0KICAgRU5EIFdJVEgNCg0KICAgV1RleHQoKTpOZXcoIFNlbGYgKTpjVGV4dCA6PSAiPHA+SW5zZXJ0IHNvbWUgdGV4dCBvbiB0aGlzIGZpZWxkIGFuZCBjb25maXJtIGl0IGRvZXMgTk9UIGRpc2FwcGVhciB3aGVuIHB1c2hpbmcgdGhlIHByZXZpb3VzIGJ1dHRvbi48L3A+Ig0KDQogICBXSVRIIE9CSkVDVCBXTGFiZWwoKTpOZXcoIFNlbGYgKQ0KICAgICAgOmNUZXh0IDo9ICJMYWJlbDoiDQogICAgICA6Y0ZvciA6PSAibXlFZGl0Ig0KICAgRU5EIFdJVEgNCg0KICAgV0lUSCBPQkpFQ1QgV0VkaXQoKTpOZXcoIFNlbGYgKQ0KICAgICAgOmNJZCA6PSAibXlFZGl0Ig0KICAgICAgOkNyZWF0ZSgpDQogICBFTkQgV0lUSA0KDQogICBXVGV4dCgpOk5ldyggU2VsZiApOmNUZXh0IDo9ICI8cD48L3A+Ig0KDQogICBXSVRIIE9CSkVDVCBXQnV0dG9uKCk6TmV3KCBTZWxmICkNCiAgICAgIDpjVGV4dCA6PSAiVGhpcyBidXR0b24gc2hvd3MgWGFpbGVyV2ViIHNvdXJjZSBjb2RlIg0KICAgICAgOk9uY2xpY2sgOj0gInNob3dDb2RlIg0KICAgICAgOmNJZCA6PSAiYnRuc291cmNlIg0KICAgICAgOkNyZWF0ZSgpDQogICBFTkQgV0lUSA0KDQogICBXVGV4dCgpOk5ldyggU2VsZiApOmNUZXh0IDo9ICI8cD48aHI+PC9wPiINCg0KICAgRklMRSAiRG9jTWFpbi5wcmciIElOVE8gY0NvZGUNCg0KICAgV0lUSCBPQkpFQ1QgV0xhYmVsKCk6TmV3KCBTZWxmICkNCiAgICAgIDpjVGV4dCA6PSAiU291cmNlOiINCiAgICAgIDpjRm9yIDo9ICJzb3VyY2UiDQogICAgICA6bFZpc2libGUgOj0gLmYuDQogICBFTkQgV0lUSA0KDQogICBXSVRIIE9CSkVDVCBXVGV4dEFyZWEoKTpOZXcoIFNlbGYgKQ0KICAgICAgOm5Db2xzIDo9IDgwDQogICAgICA6Y0lkICAgOj0gInNvdXJjZSINCiAgICAgIDpuUm93cyA6PSA0MA0KICAgICAgOmNUZXh0IDo9IEhCX0Jhc2U2NEVuY29kZSggY0NvZGUgKQ0KICAgICAgOmxWaXNpYmxlIDo9IC5mLg0KICAgICAgOmxSZWFkT25seSA6PSAudC4NCiAgICAgIDpDcmVhdGUoKQ0KICAgRU5EIFdJVEgNCg0KICAgOjpBZGRTY3JpcHQoIGNKcywgLkYuLCAuVC4gKQ0KDQogICAvL0VuZ2luZTpMb2dFbnYoKQ0KDQpSRVRVUk4gbmlsDQoNCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQoNCk1FVEhPRCB4d19DbGljayggaEV2ZW50ICkgQ0xBU1MgV0RvY01haW4NCg0KICAgTE9DQUwgY0h0bWwNCg0KICAgVEVYVCBJTlRPIGNIdG1sDQogICAgICA8cD5UaGlzIG5ldyBwYXJhZ3JhcGggaGFzIGJlZW4gY3JlYXRlZCB0aHJvdWdoIGEgQ0dJIGZpcmVkIGV2ZW50LjwvcD4NCiAgICAgIDxwPklmIHlvdSBoYWQgcHVzaGVkIHRoZSB0aGlyZCBidXR0b24gYmVmb3JlIGNhbGxpbmcgdGhpcyBmb3VydGggYnV0dG9uLA0KICAgICAgdGFrZSBhIGxvb2sgYXQgdGV4dCBvZiB0aGUgY2l0eSB3aGVyZSB4YWlsZXIuY29tIHNlcnZlciBpcy4gQXMgeW91IGNhbg0KICAgICAgc2VlLCB0aGUgY2l0eSBuYW1lIGNvbnRpbnVlcyB0aGVyZS4gWGFpbGVyV2ViIG1hZ2ljISI8L3A+DQogICAgICA8cD5FdmVudCBwcm9wZXJ0eTogSUQgPSAie2lkfSI8L3A+DQogICBFTkRURVhUDQoNCiAgIElGIEhCX0lzSGFzaCggaEV2ZW50ICkgLkFORC4gSEJfSEhhc0tleSggaEV2ZW50LCAnaWQnICkNCiAgICAgIGNIdG1sIDo9IFN0clRyYW4oIGNIdG1sLCAie2lkfSIsIGhFdmVudFsgJ2lkJyBdICkNCiAgIEVORElGDQoNCiAgIFdUZXh0KCk6TmV3KCBTZWxmICk6Y1RleHQgOj0gY0h0bWwNCg0KUkVUVVJOIE5JTA==</textarea>
+
+  <script>
+    function myfunction(e) {
+       alert( 'Click triggered from a user function' );
+    }
+    function citySolver(element, data) {
+       if (data.city) {
+           element.innerHTML = 'Xailer server is at ' + data.city;
+           xw_setHbData(element, 'cText', element.innerText);
+       }
+       else
+          element.innerHTML = 'City could not be found';
+    }
+    function showCode() {
+       const ele = document.getElementById("source");
+       if (ele) {
+          ele.value = atob(ele.value);
+          ele.hidden = false;
+          document.getElementById("btnsource").disabled = true;
+       }
+    }
+  </script>
+
+  <script>
+    const xw_docName  = "wdocmain";
+    var xw_mapProp  = new Map(); 
+    var xw_mapEvent = new Map(); 
+    var xw_mapPost  = new Map(); 
+    xw_mapProp.set( 'button1', {"ldisabled":false} );
+    xw_mapProp.set( 'button2', {"ldisabled":false} );
+    xw_mapProp.set( 'button3', {"ldisabled":false} );
+    xw_mapProp.set( 'mycity', {"cvalue":""} );
+    xw_mapProp.set( 'button4', {"ldisabled":false} );
+    xw_mapProp.set( 'myEdit', {"cvalue":""} );
+    xw_mapProp.set( 'btnsource', {"ldisabled":false} );
+    xw_mapEvent.set( 'button2', {"onclick":"myfunction"} );
+    xw_mapEvent.set( 'button4', {"onclick":"@xw_click"} );
+    xw_mapEvent.set( 'btnsource', {"onclick":"showCode"} );
+    function xw_setHbData(element, hbData, value, post = false) {
+       if (post) {
+          if (xw_mapPost.has(element.id)) {
+             xw_mapPost.get(element.id)[hbData.toLowerCase()] = value;
+          } else {
+             xw_mapPost.set(element.id, {});
+             xw_mapPost.get(element.id)[hbData.toLowerCase()] = value;
+          }
+       } else {
+          xw_mapProp.get(element.id)[hbData.toLowerCase()] = value;
+       }
+    }
+    function xw_baseUri() {
+       return window.location.href.split('.cgi')[0] + '.cgi';
+    }
+    function xw_idVisible( cId, lShow ) {
+       const ele = document.getElementById(cId);
+       if (ele) {
+          if (typeof lShow === "undefined") {
+             lShow = ele.hidden;
+             }
+          ele.hidden = !lShow;
+       }
+    }
+    function xw_getCookie(name) {
+       let matches = document.cookie.match(new RegExp(
+       "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+       if (matches) {
+          return decodeURIComponent(matches[1]);
+       } else {
+          console.warn( "Cookie not found: " + name );
+          return undefined;
+       }
+    }
+    function xw_setCookie(name, value, options = {}) {
+      if (value === undefined) {
+        console.warn( "Cookie value undefined: " + name );
+        return false;
+      }
+      if (value.length > 1024) {
+        console.warn( "excessive size for cookie: " + name );
+        return false;
+      }
+      if (options.expires instanceof Date) {
+        options.expires = options.expires.toUTCString();
+      }
+      let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+      for (let optionKey in options) {
+        updatedCookie += "; " + optionKey;
+        let optionValue = options[optionKey];
+        if (optionValue !== true) {
+          updatedCookie += "=" + optionValue;
+        }
+      }
+      document.cookie = updatedCookie;
+      return true;
+    }
+    function xw_deleteCookie(name) {
+       xw_setCookie(name, "", {'max-age': -1});
+    }
+    function xw_submit(e) {
+       let ele = document.getElementById( e.target.name );
+       if (ele) {
+          xw_setCookie("session", xw_getCookie("session"), {'max-age': 60});
+          xw_saveState();
+          xw_saveSession();
+          xw_savePost(e.target.name);
+       }
+       return true;
+    }
+    function xw_routeEvent(el, name, ev ) {
+       const id = (el ? el.id : 0);
+       const e = {"id":id,
+                  "isTrusted":ev.isTrusted,
+                  "altKey":ev.altKey,
+                  "ctrlKey":ev.ctrlKey,
+                  "clientX":ev.clientX,
+                  "clientY":ev.clientY}
+       xw_setCookie("event", JSON.stringify(e), {'max-age': 60});
+       xw_setCookie("session", xw_getCookie("session"), {'max-age': 60});
+       xw_saveState();
+       xw_saveSession();
+       xw_savePost();
+       const d = (el ? el.dataset.document : xw_docName);
+       window.location = xw_baseUri() + "?action=" + d + "-" + name;
+    }
+    function xw_saveState() {
+       let s = {};
+       for (const [id, obj] of xw_mapProp) {
+          for(const[key, val] of Object.entries(obj)) {
+             const ele = document.getElementById( id );
+             const nam = key.substring(1);
+             const typ = typeof ele[nam];
+             if (typ !== "undefined") {
+               if (typ === "string" && ele[nam].length > 512) {
+                 obj[key] = null;
+               } else {
+                 obj[key] = ele[nam];
+               }
+             }
+          }
+          s[id] = obj;
+       }
+       if (Object.keys(s).length > 0) {
+          xw_setCookie("state", JSON.stringify(s), {'max-age': 60});
+       }
+    }
+    function xw_saveSession() {
+       let s = {};
+       for (const [id, obj] of xw_mapProp) {
+          let nob = {};
+          let ele = document.getElementById(id);
+          for(const[key, val] of Object.entries(obj)) {
+             if (val == null) {
+                nob[key] = ele[key];
+             }
+          }
+          if (Object.keys(nob).length > 0) {
+             s[id] = nob;
+          }
+       }
+       if (Object.keys(s).length > 0) {
+          sessionStorage.setItem( encodeURIComponent(window.location), JSON.stringify(s) );
+       }
+       else {
+          sessionStorage.removeItem( encodeURIComponent(window.location));
+       }
+    }
+    function xw_savePost(id) {
+       if (xw_mapPost.size === 0) {
+          return false;
+       }
+       let form = document.getElementById(id);
+       if (form) {
+          let input;
+          for (const [id, obj] of xw_mapPost) {
+             for(const[key, val] of Object.entries(obj)) {
+                if (val !== null) {
+                   input = document.createElement('input');
+                   input.setAttribute('name', id + '--' + key);
+                   input.setAttribute('value', val);
+                   input.setAttribute('type', 'hidden');
+                   form.appendChild(input);
+                }
+             }
+          }
+       } else {
+          form = document.createElement('form');
+          form.method = "POST";
+          let input;
+          for (const [id, obj] of xw_mapPost) {
+             for(const[key, val] of Object.entries(obj)) {
+                if (val !== null) {
+                   input = document.createElement('input');
+                   input.setAttribute('name', id + '@' + key);
+                   input.setAttribute('value', val);
+                   input.setAttribute('type', 'hidden');
+                   form.appendChild(input);
+                }
+             }
+          }
+          document.body.appendChild(form);
+          form.addEventListener("submit", function(e){e.preventDefault();});
+          form.submit();
+       }
+       return true;
+    }
+    function xw_stateValue(id, name) {
+       return xw_mapProp.get(id)[name];
+    }
+    function xw_restoreSession() {
+       const j = sessionStorage.getItem( encodeURIComponent(window.location) );
+       if (j) {
+          let s = JSON.parse(j);
+          for (const [id, obj] of s) {
+             const ele = document.getElementById( id );
+             if (ele) {
+                for (const[key, val] of Object.entries(obj)) {
+                   ele[key] = val;
+                }
+             }
+          }
+       }
+    }
+    async function xw_fetch( targetId, sourceId, cb, url, options ) {
+       const el = document.getElementById(targetId);
+       const or = document.getElementById(sourceId);
+       let tp = options.headers['Content-type'];
+       let dt = null;
+       let re = null;
+       if (cb) {
+          try {
+             if (typeof eval(cb) !== "function") {
+                console.warn(`function ${cb} not found.`);
+                return;
+             }
+          } catch (exception) {
+             console.warn(`Function ${cb} not found.`);
+             return;
+          }
+       }
+       if (or) {
+          or.disabled = true;
+       }
+       try {
+          re = await fetch(url, options);
+          if (re.ok) {
+             if (re.status != 200) {
+                tp = "application/javascript";
+             }
+             try {
+                switch(tp) {
+                case "application/json":
+                   dt = await re.json();
+                   break;
+                case "text/plain":
+                case "application/javascript":
+                   dt = await re.text();
+                   break;
+                case "multipart/form-data":
+                case "application/x-www-form-urlencoded":
+                   dt = await re.formData();
+                   break;
+                case "application/octet-stream":
+                   dt = await re.blob();
+                   break;
+                default:
+                   dt = await re.text();
+                }
+             } catch (exception) {
+                console.warn(exception);
+                dt = null;
+             }
+          }
+       } catch (exception) {
+          console.warn(exception);
+          re = null;
+       }
+       if (or) {
+          or.disabled = false;
+       }
+       if (dt) {
+          if ( tp === "application/javascript" ) {
+             if (re.status === 200) {
+                let s = document.createElement('script');
+                s.text = dt;
+                const node = document.getElementsByTagName('head')[0].appendChild(s);
+                node.remove();
+             } else {
+                console.warn( dt );
+             }
+          } else {
+             if (cb ) {
+                eval(cb)(el,dt);
+             } else {
+               console.warn('Call-back function empty');
+             }
+          }
+       }
+    }
+    xw_deleteCookie("event");
+    xw_deleteCookie("state");
+    for (const [key, obj] of xw_mapEvent) {
+       for(const[eve, val] of Object.entries(obj)) {
+          const ele = document.getElementById( key );
+          if ( !ele )  {
+             continue;
+          }
+          if (val.startsWith('@')) {
+             ele.addEventListener(`${eve}`.substring(2), function(e) {
+                xw_routeEvent(ele, val.substring(1), e);
+          });
+          }
+          else {
+             try {
+                if (typeof eval(`${val}`) === "function") {
+                   ele.addEventListener(`${eve}`.substring(2), eval(`${val}`));
+                }
+             } catch (exception) {
+                console.warn(exception);
+             }
+          }
+       }
+    }
+  </script>
+</body>
+</html>
+
+Execute time in milliseconds:         12

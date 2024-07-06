@@ -1,0 +1,420 @@
+dbg> Get-Cookie session:1f7a932d285141233710f5193d724834535776a0
+--------------------------------------------------------------------------------
+status: 200
+Content-type: text/html
+Set-Cookie: session=1f7a932d285141233710f5193d724834535776a0; Path=/; SameSite=strict; Max-Age=3600
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Tables</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="/css/xw_BasicContext.css">
+  <style>
+    .table-filterable tr:nth-child(even) {
+      background-color: initial;
+    }
+    .table-filterable tbody tr {
+      border-bottom: 1px solid #333333;
+    }
+  #table2 tr:nth-child(even) {
+    background-color: #D6EEEE;
+    }
+  #table5 th {
+    background-color:green;
+    background-color: green;
+    border: none;
+    }
+  #table5 tfoot {
+    background-color:green;
+    position:sticky;
+    inset-block-end: 0;
+    }
+  #table5 thead {
+    position:sticky;
+    inset-block-start: 0;
+    }
+  #table5 tr {
+    scroll-snap-align: start;
+    }
+  #table5 td {
+    border: none;
+    }
+  </style>
+</head>
+<body>
+  <x-page id="default">
+    <h1>XailerWeb - Simple tables demo</h1>
+    <div class="xw-table">
+      <table id="table1" class="xw-table__table">
+        <caption>Simple table</caption>
+        <tr>
+          <th class="field-info" data-field="First Name">First Name</th>
+          <th class="field-info" data-field="Last Name">Last Name</th>
+          <th class="field-info" data-field="Credit">Credit</th>
+        </tr>
+        <tr>
+          <td>Ignacio</td>
+          <td>Ortiz</td>
+          <td>5000</td>
+        </tr>
+        <tr>
+          <td>Ernesto</td>
+          <td>Mate</td>
+          <td>2000</td>
+        </tr>
+        <tr>
+          <td>Perico</td>
+          <td>De los Palotes</td>
+          <td>100</td>
+        </tr>
+      </table>
+    </div>
+    <p></p>
+    <div class="xw-table">
+      <table id="table2" class="xw-table__table">
+        <caption>Col groups</caption>
+        <colgroup span="1" style="width: 200px;">
+        <colgroup span="1" style="width: 300px;">
+        <tr>
+          <th class="field-info" data-field="First Name">First Name</th>
+          <th class="field-info" data-field="Last Name">Last Name</th>
+          <th class="field-info" data-field="Credit">Credit</th>
+        </tr>
+        <tr>
+          <td>Ignacio</td>
+          <td>Ortiz</td>
+          <td>5000</td>
+        </tr>
+        <tr>
+          <td>Ernesto</td>
+          <td>Mate</td>
+          <td>2000</td>
+        </tr>
+        <tr>
+          <td>Perico</td>
+          <td>De los Palotes</td>
+          <td>100</td>
+        </tr>
+      </table>
+    </div>
+    <p></p>
+    <div class="xw-table">
+      <table id="table3" class="xw-table__table">
+        <caption>Header left with rowspan</caption>
+        <colgroup span="1" style="width: 200px;">
+        <colgroup span="1" style="width: 300px;">
+        <tr>
+          <th class="field-info" data-field="Name">Name</th>
+          <td>Ignacio</td>
+        </tr>
+        <tr>
+          <th rowspan="2" class="field-info" data-field="Phone">Phone</th>
+          <td>456 789 215</td>
+        </tr>
+        <tr>
+          <td>456 781 237 </td>
+        </tr>
+      </table>
+    </div>
+    <p></p>
+    <div class="xw-table" style="height:600px;overflow-y:auto;scroll-snap-type:y mandatory;width:400px;">
+      <table id="table5" class="xw-table__table" style="width:100%;">
+        <thead>
+          <tr>
+            <th class="field-info" data-field="Code">Code</th>
+            <th class="field-info" data-field="Name">Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>02</td>
+            <td>Albacete</td>
+          </tr>
+          <tr>
+            <td>03</td>
+            <td>Alicante/Alacant</td>
+          </tr>
+          <tr>
+            <td>04</td>
+            <td>Almería</td>
+          </tr>
+          <tr>
+            <td>01</td>
+            <td>Araba/Álava</td>
+          </tr>
+          <tr>
+            <td>33</td>
+            <td>Asturias</td>
+          </tr>
+          <tr>
+            <td>05</td>
+            <td>Ávila</td>
+          </tr>
+          <tr>
+            <td>06</td>
+            <td>Badajoz</td>
+          </tr>
+          <tr>
+            <td>07</td>
+            <td>Balears, Illes</td>
+          </tr>
+          <tr>
+            <td>08</td>
+            <td>Barcelona</td>
+          </tr>
+          <tr>
+            <td>48</td>
+            <td>Bizkaia</td>
+          </tr>
+          <tr>
+            <td>09</td>
+            <td>Burgos</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Cáceres</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Cádiz</td>
+          </tr>
+          <tr>
+            <td>39</td>
+            <td>Cantabria</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Castellón/Castelló</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>Ciudad Real</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>Córdoba</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>Coruña, A</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>Cuenca</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>Gipuzkoa</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>Girona</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>Granada</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>Guadalajara</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>Huelva</td>
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>Huesca</td>
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>Jaén</td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>León</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>Lleida</td>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td>Lugo</td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>Madrid</td>
+          </tr>
+          <tr>
+            <td>29</td>
+            <td>Málaga</td>
+          </tr>
+          <tr>
+            <td>30</td>
+            <td>Murcia</td>
+          </tr>
+          <tr>
+            <td>31</td>
+            <td>Navarra</td>
+          </tr>
+          <tr>
+            <td>32</td>
+            <td>Ourense</td>
+          </tr>
+          <tr>
+            <td>34</td>
+            <td>Palencia</td>
+          </tr>
+          <tr>
+            <td>35</td>
+            <td>Palmas, Las</td>
+          </tr>
+          <tr>
+            <td>36</td>
+            <td>Pontevedra</td>
+          </tr>
+          <tr>
+            <td>26</td>
+            <td>Rioja, La</td>
+          </tr>
+          <tr>
+            <td>37</td>
+            <td>Salamanca</td>
+          </tr>
+          <tr>
+            <td>38</td>
+            <td>Santa Cruz de Tenerife</td>
+          </tr>
+          <tr>
+            <td>40</td>
+            <td>Segovia</td>
+          </tr>
+          <tr>
+            <td>41</td>
+            <td>Sevilla</td>
+          </tr>
+          <tr>
+            <td>42</td>
+            <td>Soria</td>
+          </tr>
+          <tr>
+            <td>43</td>
+            <td>Tarragona</td>
+          </tr>
+          <tr>
+            <td>44</td>
+            <td>Teruel</td>
+          </tr>
+          <tr>
+            <td>45</td>
+            <td>Toledo</td>
+          </tr>
+          <tr>
+            <td>46</td>
+            <td>Valencia/València</td>
+          </tr>
+          <tr>
+            <td>47</td>
+            <td>Valladolid</td>
+          </tr>
+          <tr>
+            <td>49</td>
+            <td>Zamora</td>
+          </tr>
+          <tr>
+            <td>50</td>
+            <td>Zaragoza</td>
+          </tr>
+          <tr>
+            <td>51</td>
+            <td>Ceuta</td>
+          </tr>
+          <tr>
+            <td>52</td>
+            <td>Melilla</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>foot</td>
+            <td>foot</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <hr>
+    <textarea rows="40" cols="80" readonly id="source">Ly9odHRwczovL3Rlc3QueGFpbGVyLmNvbS9jZ2ktYmluL3hhaWxlcndlYi90YWJsZXMuY2dpDQoNCg0KI2luY2x1ZGUgIlhhaWxlcldlYi5jaCINCg0KQ0xBU1MgV0RvY01haW4gRlJPTSBXRG9jDQoNCiAgIERBVEEgYURhdGExLCBhRGF0YTINCg0KICAgTUVUSE9EIENyZWF0ZURvYygpDQogICBNRVRIT0QgVGFibGUxKCkNCiAgIE1FVEhPRCBUYWJsZTIoKQ0KICAgTUVUSE9EIFRhYmxlMygpDQogICBNRVRIT0QgVGFibGU0KCkNCg0KRU5EIENMQVNTDQoNCk1FVEhPRCBDcmVhdGVEb2MoKSBDTEFTUyBXRG9jTWFpbg0KDQogICBMT0NBTCBjQ29kZSwgY0pzDQoNCiAgIFdJVEggT0JKRUNUIFdCYXNpY0NvbnRleHQoKTpOZXcoIFNlbGYgKQ0KICAgICAgOmNUaGVtZSA6PSAibGlnaHQiDQogICBFTkQgV0lUSA0KDQogICAjSUZERUYgX0xJTlVYXw0KICAgICAgRW5naW5lOmNMb2dGaWxlIDo9ICIvbW50L2MveGFpbGVyd2ViL3NhbXBsZXMvMDctVGFibGVzL2Vycm9yLmxvZyINCiAgICNFTkRJRg0KDQogICBFbmdpbmU6bERlYnVnIDo9IC50Lg0KDQogICA6OmFEYXRhMSA6PSB7IHsgIkZpcnN0IE5hbWUiLCAiTGFzdCBOYW1lIiwgIkNyZWRpdCIgfSw7DQogICAgICAgICAgICAgICB7ICJJZ25hY2lvIiwgIk9ydGl6IiwgIjUwMDAiIH0sOw0KICAgICAgICAgICAgICAgeyAiRXJuZXN0byIsICJNYXRlIiwgIjIwMDAiIH0sOw0KICAgICAgICAgICAgICAgeyAiUGVyaWNvIiwgIkRlIGxvcyBQYWxvdGVzIiwgIjEwMCIgfSB9DQoNCiAgIDo6YURhdGEyIDo9IHsgeyAiTmFtZSIsICJJZ25hY2lvIiB9LDsNCiAgICAgICAgICAgICAgICAgeyAiUGhvbmUiLCAiNDU2IDc4OSAyMTUiIH0sOw0KICAgICAgICAgICAgICAgICB7ICIiLCAgIjQ1NiA3ODEgMjM3ICIgfSAgfQ0KDQogICBFQ0hPICI8aDE+WGFpbGVyV2ViIC0gU2ltcGxlIHRhYmxlcyBkZW1vPC9oMT4iIElOVE8gU2VsZg0KDQogICA6OlRhYmxlMSgpDQogICBXUGFyYWdyYXBoKCk6TmV3KCBTZWxmICkNCiAgIDo6VGFibGUyKCkNCiAgIFdQYXJhZ3JhcGgoKTpOZXcoIFNlbGYgKQ0KICAgOjpUYWJsZTMoKQ0KICAgV1BhcmFncmFwaCgpOk5ldyggU2VsZiApDQogICA6OlRhYmxlNCgpDQoNCiAgIFRFWFQgSU5UTyBjSnMNCiAgICAgIHRhID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInNvdXJjZSIpOw0KICAgICAgaWYgKHRhKSB7DQogICAgICAgICB0YS52YWx1ZSA9IHh3X2I2NHRvVW5pY29kZSh0YS52YWx1ZSk7DQogICAgICB9DQogICAgICBkZWxldGUgdGE7DQogICBFTkRURVhUDQoNCiAgIDo6QWRkU2NyaXB0KCBjSnMgKQ0KDQogICBFQ0hPICI8aHI+IiBJTlRPIFNlbGYNCg0KICAgRklMRSAiRG9jTWFpbi5wcmciIElOVE8gY0NvZGUNCg0KICAgV0lUSCBPQkpFQ1QgV1RleHRBcmVhKCk6TmV3KCBTZWxmICkNCiAgICAgIDpuQ29scyA6PSA4MA0KICAgICAgOmNJZCAgIDo9ICJzb3VyY2UiDQogICAgICA6blJvd3MgOj0gNDANCiAgICAgIDpjVGV4dCA6PSBIQl9CYXNlNjRFbmNvZGUoIGNDb2RlICkNCiAgICAgIDpsUmVhZE9ubHkgOj0gLnQuDQogICAgICA6Q3JlYXRlKCkNCiAgIEVORCBXSVRIDQoNClJFVFVSTiBuaWwNCg0KLy8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0NCg0KTUVUSE9EIFRhYmxlMSgpIENMQVNTIFdEb2NNYWluDQoNCiAgIFdJVEggT0JKRUNUIFdUYWJsZSgpOk5ldyggU2VsZiApDQogICAgICA6Y0lkIDo9ICJ0YWJsZTEiDQogICAgICA6Y0NhcHRpb24gOj0gIlNpbXBsZSB0YWJsZSINCiAgICAgIDpMb2FkRGF0YSggOjphRGF0YTEgKQ0KICAgRU5EIFdJVEgNCg0KUkVUVVJOIG5pbA0KDQovLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQ0KDQpNRVRIT0QgVGFibGUyKCkgQ0xBU1MgV0RvY01haW4NCg0KICAgOjpBZGRTdHlsZSggIiN0YWJsZTIgdHI6bnRoLWNoaWxkKGV2ZW4pIiwgImJhY2tncm91bmQtY29sb3I6ICNENkVFRUU7IiApDQoNCiAgIFdJVEggT0JKRUNUIFdUYWJsZSgpOk5ldyggU2VsZiApDQogICAgICA6Y0lkIDo9ICJ0YWJsZTIiDQogICAgICA6Y0NhcHRpb24gOj0gIkNvbCBncm91cHMiDQogICAgICA6TG9hZERhdGEoIDo6YURhdGExICkNCiAgICAgIDpBZGRDb2xHcm91cCgxKTpBZGRTdHlsZSggIndpZHRoOiAyMDBweCIgKQ0KICAgICAgOkFkZENvbEdyb3VwKDEpOkFkZFN0eWxlKCAid2lkdGg6IDMwMHB4IiApDQogICBFTkQgV0lUSA0KDQpSRVRVUk4gbmlsDQoNCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQoNCk1FVEhPRCBUYWJsZTMoKSBDTEFTUyBXRG9jTWFpbg0KDQogICBXSVRIIE9CSkVDVCBXVGFibGUoKTpOZXcoIFNlbGYgKQ0KICAgICAgOmNJZCA6PSAidGFibGUzIg0KICAgICAgOmNDYXB0aW9uIDo9ICJIZWFkZXIgbGVmdCB3aXRoIHJvd3NwYW4iDQogICAgICA6TG9hZERhdGEoIDo6YURhdGEyLCwgLlQuICkNCiAgICAgIDpBZGRDb2xHcm91cCgxKTpBZGRTdHlsZSggIndpZHRoOiAyMDBweCIgKQ0KICAgICAgOkFkZENvbEdyb3VwKDEpOkFkZFN0eWxlKCAid2lkdGg6IDMwMHB4IiApDQogICAgICA6YVJvd3NbIDIgXTphQ29sc1sgMSBdOm5Sb3dTcGFuIDo9IDINCiAgIEVORCBXSVRIDQoNClJFVFVSTiBuaWwNCg0KLy8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0NCg0KTUVUSE9EIFRhYmxlNCgpIENMQVNTIFdEb2NNYWluDQoNCiAgIFdJVEggT0JKRUNUIFdUYWJsZSgpOk5ldyggU2VsZiApDQogICAgICA6Y0lkIDo9ICJ0YWJsZTUiDQogICAgICA6b1N0eWxlOmNXaWR0aCA6PSAiNDAwcHgiDQogICAgICA6Y0hlYWRlckJrQ29sb3IgOj0gImdyZWVuIg0KICAgICAgOmNGb290ZXJCa0NvbG9yIDo9ICJncmVlbiINCiAgICAgIDpjTWF4SGVpZ2h0IDo9ICI2MDBweCINCiAgICAgIDpMb2FkRGF0YSggeyB7ICJDb2RlIiwgIk5hbWUiIH0gfSApDQogICAgICA6TG9hZERhdGEoIFByb3ZpbmNpYXMoKSApDQogICAgICA6TG9hZERhdGEoIHsgeyAiZm9vdCIsICJmb290IiB9IH0gKQ0KICAgICAgOm5IZWFkZXIgOj0gMQ0KICAgICAgOm5Gb290ZXIgOj0gMQ0KICAgRU5EIFdJVEgNCg0KUkVUVVJOIG5pbA0KDQovLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQ0KLy8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0NCg0KU1RBVElDIEZVTkNUSU9OIFByb3ZpbmNpYXMoKQ0KDQpSRVRVUk4geyB7IjAyIiwiQWxiYWNldGUifSw7DQogICAgICAgICB7IjAzIiwiQWxpY2FudGUvQWxhY2FudCJ9LDsNCiAgICAgICAgIHsiMDQiLCJBbG1lcsOtYSJ9LDsNCiAgICAgICAgIHsiMDEiLCJBcmFiYS/DgWxhdmEifSw7DQogICAgICAgICB7IjMzIiwiQXN0dXJpYXMifSw7DQogICAgICAgICB7IjA1Iiwiw4F2aWxhIn0sOw0KICAgICAgICAgeyIwNiIsIkJhZGFqb3oifSw7DQogICAgICAgICB7IjA3IiwiQmFsZWFycywgSWxsZXMifSw7DQogICAgICAgICB7IjA4IiwiQmFyY2Vsb25hIn0sOw0KICAgICAgICAgeyI0OCIsIkJpemthaWEifSw7DQogICAgICAgICB7IjA5IiwiQnVyZ29zIn0sOw0KICAgICAgICAgeyIxMCIsIkPDoWNlcmVzIn0sOw0KICAgICAgICAgeyIxMSIsIkPDoWRpeiJ9LDsNCiAgICAgICAgIHsiMzkiLCJDYW50YWJyaWEifSw7DQogICAgICAgICB7IjEyIiwiQ2FzdGVsbMOzbi9DYXN0ZWxsw7MifSw7DQogICAgICAgICB7IjEzIiwiQ2l1ZGFkIFJlYWwifSw7DQogICAgICAgICB7IjE0IiwiQ8OzcmRvYmEifSw7DQogICAgICAgICB7IjE1IiwiQ29ydcOxYSwgQSJ9LDsNCiAgICAgICAgIHsiMTYiLCJDdWVuY2EifSw7DQogICAgICAgICB7IjIwIiwiR2lwdXprb2EifSw7DQogICAgICAgICB7IjE3IiwiR2lyb25hIn0sOw0KICAgICAgICAgeyIxOCIsIkdyYW5hZGEifSw7DQogICAgICAgICB7IjE5IiwiR3VhZGFsYWphcmEifSw7DQogICAgICAgICB7IjIxIiwiSHVlbHZhIn0sOw0KICAgICAgICAgeyIyMiIsIkh1ZXNjYSJ9LDsNCiAgICAgICAgIHsiMjMiLCJKYcOpbiJ9LDsNCiAgICAgICAgIHsiMjQiLCJMZcOzbiJ9LDsNCiAgICAgICAgIHsiMjUiLCJMbGVpZGEifSw7DQogICAgICAgICB7IjI3IiwiTHVnbyJ9LDsNCiAgICAgICAgIHsiMjgiLCJNYWRyaWQifSw7DQogICAgICAgICB7IjI5IiwiTcOhbGFnYSJ9LDsNCiAgICAgICAgIHsiMzAiLCJNdXJjaWEifSw7DQogICAgICAgICB7IjMxIiwiTmF2YXJyYSJ9LDsNCiAgICAgICAgIHsiMzIiLCJPdXJlbnNlIn0sOw0KICAgICAgICAgeyIzNCIsIlBhbGVuY2lhIn0sOw0KICAgICAgICAgeyIzNSIsIlBhbG1hcywgTGFzIn0sOw0KICAgICAgICAgeyIzNiIsIlBvbnRldmVkcmEifSw7DQogICAgICAgICB7IjI2IiwiUmlvamEsIExhIn0sOw0KICAgICAgICAgeyIzNyIsIlNhbGFtYW5jYSJ9LDsNCiAgICAgICAgIHsiMzgiLCJTYW50YSBDcnV6IGRlIFRlbmVyaWZlIn0sOw0KICAgICAgICAgeyI0MCIsIlNlZ292aWEifSw7DQogICAgICAgICB7IjQxIiwiU2V2aWxsYSJ9LDsNCiAgICAgICAgIHsiNDIiLCJTb3JpYSJ9LDsNCiAgICAgICAgIHsiNDMiLCJUYXJyYWdvbmEifSw7DQogICAgICAgICB7IjQ0IiwiVGVydWVsIn0sOw0KICAgICAgICAgeyI0NSIsIlRvbGVkbyJ9LDsNCiAgICAgICAgIHsiNDYiLCJWYWxlbmNpYS9WYWzDqG5jaWEifSw7DQogICAgICAgICB7IjQ3IiwiVmFsbGFkb2xpZCJ9LDsNCiAgICAgICAgIHsiNDkiLCJaYW1vcmEifSw7DQogICAgICAgICB7IjUwIiwiWmFyYWdvemEifSw7DQogICAgICAgICB7IjUxIiwiQ2V1dGEifSw7DQogICAgICAgICB7IjUyIiwiTWVsaWxsYSIgfSB9DQoNCg==</textarea>
+  </x-page>
+  <script src="/js/xw_backpack.js"></script>
+  <script>
+       ta = document.getElementById("source");
+       if (ta) {
+          ta.value = xw_b64toUnicode(ta.value);
+       }
+       delete ta;
+  </script>
+  <script>
+    function setTheme(name) {
+      const dark   = ["#00001a","DarkSlateBlue","white","LightGray","Navy","cornflowerblue","white","MediumVioletRed","HotPink","DimGray","Gold","PaleGoldenrod","Black","LightSteelBlue","64"];
+      const light  = ["white","whitesmoke","black","gray","Tan","Wheat","black","Teal","LightSeaGreen","DimGray","SkyBlue","LightBlue","Black","Bisque","255"];
+      const dColor = ["body-color","body-alt-color","body-text-color","body-text-mutted-color","primary-color","primary-hover-color","primary-text-color","secondary-color","secondary-hover-color","secondary-text-color","accent-color","accent-text-color","accent-hover-color","border-color","gr-color"];
+      const root   = document.documentElement;
+      if (name === "auto" ) {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          name = "dark";
+        } else {
+          name = "light";
+        }
+      }
+      const vColor = (name === "dark" ? dark : light);
+      dColor.forEach((v, i) => {
+        root.style.setProperty(`--${v}`, vColor[i]);
+      });
+    }
+    document.addEventListener("DOMContentLoaded", () => {
+      let savedTheme = "light";
+      if (savedTheme === "") {
+        savedTheme = localStorage.getItem("theme") || "auto";
+      }
+      setTheme(savedTheme);
+      for (const optionElement of document.querySelectorAll("#selTheme option")) {
+        optionElement.selected = savedTheme === optionElement.value;
+      }
+      const selector = document.querySelector("#selTheme");
+      if (selector) {
+        selector.addEventListener("change", () => {
+          localStorage.setItem("theme", this.value);
+          setTheme(this.value);
+        });
+      }
+    });
+  </script>
+  <script>
+    const xw_docName  = "wdocmain";
+    var xw_mapProp  = new Map(); 
+    var xw_mapEvent = new Map(); 
+    var xw_mapPost  = new Map(); 
+    xw_mapProp.set('table1', {"lcanfilter":false});
+    xw_mapProp.set('table2', {"lcanfilter":false});
+    xw_mapProp.set('table3', {"lcanfilter":false});
+    xw_mapProp.set('table5', {"lcanfilter":false});
+    xw_deleteCookie("event");
+    xw_deleteCookie("state");
+    for (const [key, obj] of xw_mapEvent) {
+      for(const[eve, val] of Object.entries(obj)) {
+        const ele = document.getElementById(key);
+        if (ele) {
+          xw_processEvent(ele, eve, val);
+        }
+      }
+    }
+  </script>
+</body>
+</html>
+
+Execute time in milliseconds:         15

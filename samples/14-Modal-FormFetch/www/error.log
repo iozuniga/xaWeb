@@ -1,0 +1,16 @@
+Error on /modalformfetch.cgi: Argument error / LEN: BASE[1111]
+
+Called from:
+   LEN(0)
+   WENGINE:SEND(274)
+   WDOCMAIN:RENDER(409)
+   WENGINE:RENDER(395)
+   (b)ZENGINE(66)
+   WENGINE:END(0)
+   WAPP:END(110)
+   (b)ZAPP(65)
+   WAPP:RUN(0)
+   MAIN(10)
+
+
+Execute time in milliseconds:          3

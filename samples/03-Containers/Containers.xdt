@@ -1,0 +1,6 @@
+[OPTIONS]
+LockControls=.F.
+[DESKTOP]
+1=Containers.prg,8,38,8,38,0,0,480
+2=DocMain.prg,25,0,25,0,2,0,1440
+Current=2

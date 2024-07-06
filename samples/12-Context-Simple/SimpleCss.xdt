@@ -1,0 +1,9 @@
+[OPTIONS]
+LockControls=.F.
+[DESKTOP]
+1=DocMain.prg,138,14,135,4,81,0,2750
+2={wXailerWebLinux}wClasses\wHeader.prg,0,0,0,0,0,0,420
+3={XailerWebLinux}zFooter.prg,8,0,8,0,0,0,810
+4={wXailerWebLinux}wClasses\wFooter.prg,11,13,11,13,0,0,420
+5={XailerWebLinux}zText.prg,64,0,64,0,20,0,810
+Current=1

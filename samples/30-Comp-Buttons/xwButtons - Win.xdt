@@ -1,0 +1,6 @@
+[OPTIONS]
+LockControls=.F.
+[DESKTOP]
+1=DocMain.prg,17,0,17,0,0,0,890
+2=www\js\xw-components.js,4,0,4,0,0,0,1150
+Current=1

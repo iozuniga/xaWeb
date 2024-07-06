@@ -1,0 +1,6 @@
+[OPTIONS]
+LockControls=.F.
+[DESKTOP]
+1=TablesRowFilter.prg,7,43,7,43,0,0,520
+2=DocMain.prg,9,9,9,9,0,0,1060
+Current=2

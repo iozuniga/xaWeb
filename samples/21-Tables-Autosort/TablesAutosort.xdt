@@ -1,0 +1,8 @@
+[OPTIONS]
+LockControls=.F.
+[DESKTOP]
+1=TablesAutosort.prg,13,0,13,0,0,0,520
+2=DocMain.prg,15,0,17,13,0,0,830
+3=TablesAutosort.xdt,0,0,0,0,0,0,390
+4=TablesAutosort.xpj,15,22,15,22,0,0,610
+Current=2

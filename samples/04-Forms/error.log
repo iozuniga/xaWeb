@@ -1,0 +1,50 @@
+***************************** Registro de errores *****************************
+
+             Exe: C:\xailer\bin\xailer.exe
+         Version: 9.0.1
+       User name: iozun
+   Computer name: IOZUNIGA-PC
+           Fecha: 03/04/2024
+            Hora: 15:52:23
+   Memoria libre: 2097151
+     Area actual: 1
+
+------------------------- Información del compilador --------------------------
+
+  Versión Xailer: Xailer 9.0.1
+      Compilador: Harbour 3.2.0dev (r2307062207)
+Compilador C/C++: MinGW GNU C 7.3 (32-bit)
+      Plataforma: Windows 10 10.0
+
+----------------------- Información detallada del error -----------------------
+
+      Subsistema: BASE
+ Código de error: 1004
+          Estado: .F.
+     Descripción: Message not found
+       Operación: TRA_Plugin:CURL
+      Argumentos:  [ 1] = Tipo: O Valor: 
+         Fichero: 
+ Código error SO: 0
+
+Pila de llamadas:
+  __ERRRT_SBASE (0)
+  TRA_PLUGIN:ERROR (0)
+  (b)HBOBJECT (0)
+  TRA_PLUGIN:MSGNOTFOUND (0)
+  TRA_PLUGIN:CURL (0)
+  TRA_PLUGIN:RUN (99)
+  (b)TRA_PLUGIN_INSTALL (151)
+  PLUGINNOTIFY (185)
+  TPROJECT:COMPILE (4542)
+  TPROJECTMAN:COMPILE (1998)
+  TMAINFORM:KEYDOWN (1621)
+  TCODE:CODEEDITOR1KEYDOWN (1695)
+  TCODEEDITOR:ONKEYDOWN (0)
+  XCONTROL:WMKEYDOWN (1042)
+  TSTDCONTROL:WMKEYDOWN (813)
+  TCODEEDITOR:WMKEYDOWN (1403)
+  RUNFORM (0)
+  TAPPLICATION:RUN (292)
+  MAIN (50)
+

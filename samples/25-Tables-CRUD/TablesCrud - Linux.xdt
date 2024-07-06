@@ -1,0 +1,6 @@
+[OPTIONS]
+LockControls=.F.
+[DESKTOP]
+1=DocMain.prg,120,14,120,14,120,0,5682
+2=TablesCrud.prg,13,0,13,0,0,0,520
+Current=1

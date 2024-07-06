@@ -1,0 +1,126 @@
+dbg> Query string: action=wdocmain-Act_LoginPage
+dbg> Get-Param action:wdocmain-Act_LoginPage
+dbg> Get-Cookie session:1f7a932d285141233710f5193d724834535776a0
+--------------------------------------------------------------------------------
+status: 200
+Content-type: text/html
+Set-Cookie: session=1f7a932d285141233710f5193d724834535776a0; Path=/; SameSite=strict; Max-Age=3600
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="/css/xw_BasicContext.css">
+</head>
+<body>
+  <x-page id="default">
+    <p>
+      <h1>XailerWeb - Simple login demo</h1>
+      <p>You are logged as user: iozuniga@gmail.com</p>
+    </p>
+    <nav>
+      <ul>
+      <a href="?action=wdocmain-Act_LoginPage">Log in</a>
+      <a href="?action=wdocmain-Act_Page2">Second page</a>
+      <a href="?action=wdocmain-Act_Page3">Third page</a>
+      </ul>
+    </nav>
+  </x-page>
+  <x-page id="PageLogin">
+    <p></p>
+    <div class="xw-form">
+      <form action="?form=wdocmain-Frm_PageCheck" method="post" name="Frm_PageCheck" autocomplete="on" id="Frm_PageCheck" class="xw-form__form" data-document="wdocmain" onsubmit="xw_submit">
+        <fieldset name="User data" class="xw-fieldset" style="width: 400px;">
+          <legend>Login credentials</legend>
+          <div class="xw-input">
+            <label for="email" class="xw-input__label" style="display:block;">Email:</label>
+            <input placeholder="email" maxlength="50" minlength="10" type="email" name="email" autocomplete="email" id="email" class="xw-input__input" style="width: 50ch;">
+            <div class="xw-input__error"></div>
+          </div>
+          <div class="xw-input">
+            <label for="password" class="xw-input__label" style="display:block;">Password:</label>
+            <input maxlength="50" minlength="10" placeholder="password" type="password" name="password" autocomplete="password" id="password" class="xw-input__input" style="width: 50ch;">
+            <div class="xw-input__error"></div>
+          </div>
+        </fieldset>
+        <button type="submit" id="button">Submit</button>
+      </form>
+    </div>
+  </x-page>
+  <x-page id="code">
+    <hr>
+    <textarea rows="40" cols="80" readonly id="source">Ly8gaHR0cHM6Ly90ZXN0LnhhaWxlci5jb20vY2dpLWJpbi94YWlsZXJ3ZWIvbG9naW4uY2dpDQoNCiNpbmNsdWRlICJYYWlsZXJXZWIuY2giDQoNCkNMQVNTIFdEb2NNYWluIEZST00gV0RvYw0KDQogICBEQVRBIGNVc2VyIElOSVQgIiIgUEVSU0lTVEVOVA0KDQogICBNRVRIT0QgQ3JlYXRlRG9jKCkNCiAgIE1FVEhPRCBEZWZhdWx0UGFnZSgpDQogICBNRVRIT0QgQ29kZVBhZ2UoKQ0KDQogICBNRVRIT0QgQWN0X0xvZ2luUGFnZSgpDQogICBNRVRIT0QgQWN0X1BhZ2UyKCkNCiAgIE1FVEhPRCBBY3RfUGFnZTMoKQ0KDQogICBNRVRIT0QgRnJtX1BhZ2VDaGVjayggaFBhcmFtcyApDQoNCkVORCBDTEFTUw0KDQovLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQ0KDQpNRVRIT0QgQ3JlYXRlRG9jKCkgQ0xBU1MgV0RvY01haW4NCg0KICAgI0lGREVGIF9MSU5VWF8NCiAgICAgIEVuZ2luZTpjTG9nRmlsZSA6PSAiL21udC9jL3hhaWxlcndlYi9zYW1wbGVzLzA5LUxvZ2luL2Vycm9yLmxvZyINCiAgICNFTkRJRg0KDQogICBFbmdpbmU6bERlYnVnIDo9IC50Lg0KDQogICBXSVRIIE9CSkVDVCBXQmFzaWNDb250ZXh0KCk6TmV3KCBTZWxmICkNCiAgICAgIDpjVGhlbWUgOj0gImxpZ2h0Ig0KICAgRU5EIFdJVEgNCg0KICAgOjpSZWdpc3RlclBhZ2UoICJEZWZhdWx0UGFnZSIgKQ0KICAgOjpSZWdpc3RlclBhZ2UoICJDb2RlUGFnZSIgKQ0KDQpSRVRVUk4gbmlsDQoNCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQoNCk1FVEhPRCBEZWZhdWx0UGFnZSgpIENMQVNTIFdEb2NNYWluDQoNCiAgIExPQ0FMIG9QYWdlDQoNCiAgIG9QYWdlIDo9IDo6QWRkUGFnZSggImRlZmF1bHQiICkNCg0KICAgV0lUSCBPQkpFQ1QgV1BhcmFncmFwaCgpOk5ldyggb1BhZ2UgKQ0KICAgICAgRUNITyAiPGgxPlhhaWxlcldlYiAtIFNpbXBsZSBsb2dpbiBkZW1vPC9oMT4iDQogICAgICBJRiAhRW1wdHkoIDo6Y1VzZXIgKQ0KICAgICAgICAgRUNITyAiPHA+WW91IGFyZSBsb2dnZWQgYXMgdXNlcjogIiArIDo6Y1VzZXIgKyAiPC9wPiINCiAgICAgIEVORElGDQogICBFTkQgV0lUSA0KDQogICBXSVRIIE9CSkVDVCBXTmF2KCk6TmV3KCBvUGFnZSApDQogICAgICBFQ0hPICI8dWw+Ig0KICAgICAgV0lUSCBPQkpFQ1QgV0xpbmsoKTpOZXcoIFNPICkNCiAgICAgICAgIDpjVGV4dCA6PSAiTG9nIGluIg0KICAgICAgICAgOmNIcmVmIDo9IDo6QWN0aW9uKCAiQWN0X0xvZ2luUGFnZSIgKQ0KICAgICAgRU5EIFdJVEgNCiAgICAgIFdJVEggT0JKRUNUIFdMaW5rKCk6TmV3KCBTTyApDQogICAgICAgICA6Y1RleHQgOj0gIlNlY29uZCBwYWdlIg0KICAgICAgICAgOmNIcmVmIDo9IDo6QWN0aW9uKCAiQWN0X1BhZ2UyIiApDQogICAgICBFTkQgV0lUSA0KICAgICAgV0lUSCBPQkpFQ1QgV0xpbmsoKTpOZXcoIFNPICkNCiAgICAgICAgIDpjVGV4dCA6PSAiVGhpcmQgcGFnZSINCiAgICAgICAgIDpjSHJlZiA6PSA6OkFjdGlvbiggIkFjdF9QYWdlMyIgKQ0KICAgICAgRU5EIFdJVEgNCiAgICAgIEVDSE8gIjwvdWw+Ig0KICAgRU5EIFdJVEgNCg0KICAgb1BhZ2U6bEZvcmNlZCA6PSAuVC4NCg0KUkVUVVJOIG9QYWdlDQoNCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQoNCk1FVEhPRCBDb2RlUGFnZSgpIENMQVNTIFdEb2NNYWluDQoNCiAgIExPQ0FMIG9QYWdlDQogICBMT0NBTCBjQ29kZSwgY0pzDQoNCiAgIFRFWFQgSU5UTyBjSnMNCiAgICAgIHRhID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInNvdXJjZSIpOw0KICAgICAgaWYgKHRhKSB7DQogICAgICAgICB0YS52YWx1ZSA9IHh3X2I2NHRvVW5pY29kZSh0YS52YWx1ZSk7DQogICAgICB9DQogICAgICBkZWxldGUgdGE7DQogICBFTkRURVhUDQoNCiAgIDo6QWRkU2NyaXB0KCBjSnMgKQ0KDQogICBXSVRIIE9CSkVDVCBvUGFnZSA6PSA6OkFkZFBhZ2UoICJjb2RlIiApDQogICAgICA6bEZvcmNlZCA6PSAudC4NCiAgICAgIDpsRm9vdGVyIDo9IC50Lg0KDQogICAgICBFQ0hPICI8aHI+Ig0KDQogICAgICBGSUxFICJEb2NNYWluLnByZyIgSU5UTyBjQ29kZQ0KDQogICAgICBXSVRIIE9CSkVDVCBXVGV4dEFyZWEoKTpOZXcoIG9QYWdlICkNCiAgICAgICAgIDpuQ29scyA6PSA4MA0KICAgICAgICAgOmNJZCAgIDo9ICJzb3VyY2UiDQogICAgICAgICA6blJvd3MgOj0gNDANCiAgICAgICAgIDpjVGV4dCA6PSBIQl9CYXNlNjRFbmNvZGUoIGNDb2RlICkNCiAgICAgICAgIDpsUmVhZE9ubHkgOj0gLnQuDQogICAgICAgICA6Q3JlYXRlKCkNCiAgICAgIEVORCBXSVRIDQogICBFTkQgV0lUSA0KDQpSRVRVUk4gb1BhZ2UNCg0KLy8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0NCg0KTUVUSE9EIEFjdF9Mb2dpblBhZ2UoKSBDTEFTUyBXRG9jTWFpbg0KDQogICBMT0NBTCBvUGFnZSwgb0Zvcm0sIG9Hcm91cA0KDQogICBvUGFnZSA6PSA6OkFkZFBhZ2UoICJQYWdlTG9naW4iICkNCg0KICAgV1BhcmFncmFwaCgpOk5ldyggb1BhZ2UgKQ0KDQogICBXSVRIIE9CSkVDVCBvRm9ybSA6PSBXRm9ybSgpOk5ldyggb1BhZ2UgKQ0KICAgICAgOmNNZXRob2QgOj0gInBvc3QiDQogICAgICA6Y05hbWUgOj0gIkZybV9QYWdlQ2hlY2siDQogICAgICA6bEF1dG9Db21wbGV0ZSA6PSAuVC4NCiAgICAgIDpDcmVhdGUoKQ0KICAgICAgV0lUSCBPQkpFQ1Qgb0dyb3VwIDo9IFdGaWVsZHNldCgpOk5ldyggb0Zvcm0gKQ0KICAgICAgICAgOmNMZWdlbmQgOj0gIkxvZ2luIGNyZWRlbnRpYWxzIg0KICAgICAgICAgOmNOYW1lIDo9ICJVc2VyIGRhdGEiDQogICAgICAgICA6QWRkU3R5bGUoICJ3aWR0aDogNDAwcHgiICkNCiAgICAgICAgIDpDcmVhdGUoKQ0KICAgICAgICAgV0lUSCBPQkpFQ1QgV0VtYWlsKCk6TmV3KCBvR3JvdXAgKQ0KICAgICAgICAgICAgOmNMYWJlbCA6PSAiRW1haWw6Ig0KICAgICAgICAgICAgOmxMYWJlbE5ld0xpbmUgOj0gLnQuDQogICAgICAgICAgICA6Y0lkIDo9ICJlbWFpbCINCiAgICAgICAgICAgIDpjTmFtZSA6PSAiZW1haWwiDQogICAgICAgICAgICA6Y1BsYWNlSG9sZGVyIDo9ICJlbWFpbCINCiAgICAgICAgICAgIDpjQXV0b0NvbXBsZXRlIDo9ICJlbWFpbCINCiAgICAgICAgICAgIDpuU2l6ZSA6PSA1MA0KICAgICAgICAgICAgOm5NYXhMZW5ndGggOj0gNTANCiAgICAgICAgICAgIDpuTWluTGVuZ3RoIDo9IDEwDQogICAgICAgICAgICA6Q3JlYXRlKCkNCiAgICAgICAgIEVORCBXSVRIDQogICAgICAgICBXSVRIIE9CSkVDVCBXRWRpdCgpOk5ldyggb0dyb3VwICkNCiAgICAgICAgICAgIDpjTGFiZWwgOj0gIlBhc3N3b3JkOiINCiAgICAgICAgICAgIDpsTGFiZWxOZXdMaW5lIDo9IC50Lg0KICAgICAgICAgICAgOmNUeXBlIDo9ICJwYXNzd29yZCINCiAgICAgICAgICAgIDpjSWQgOj0gInBhc3N3b3JkIg0KICAgICAgICAgICAgOmNOYW1lIDo9ICJwYXNzd29yZCINCiAgICAgICAgICAgIDpjUGxhY2VIb2xkZXIgOj0gInBhc3N3b3JkIg0KICAgICAgICAgICAgOmNBdXRvQ29tcGxldGUgOj0gInBhc3N3b3JkIg0KICAgICAgICAgICAgOm5TaXplIDo9IDUwDQogICAgICAgICAgICA6bk1heExlbmd0aCA6PSA1MA0KICAgICAgICAgICAgOm5NaW5MZW5ndGggOj0gMTANCiAgICAgICAgICAgIDpDcmVhdGUoKQ0KICAgICAgICAgRU5EIFdJVEgNCiAgICAgIEVORCBXSVRIDQogICAgICBXSVRIIE9CSkVDVCBXQnV0dG9uKCk6TmV3KCBvRm9ybSApDQogICAgICAgICA6Y1R5cGUgOj0gInN1Ym1pdCINCiAgICAgICAgIDpjVGV4dCA6PSAiU3VibWl0Ig0KICAgICAgICAgOmNJZCA6PSAiYnV0dG9uIg0KICAgICAgICAgOkNyZWF0ZSgpDQogICAgICBFTkQgV0lUSA0KICAgRU5EIFdJVEgNCg0KUkVUVVJOIG9QYWdlDQoNCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQoNCk1FVEhPRCBBY3RfUGFnZTIoKSBDTEFTUyBXRG9jTWFpbg0KDQogICBMT0NBTCBvUGFnZQ0KDQogICBXSVRIIE9CSkVDVCBvUGFnZSA6PSA6OkFkZFBhZ2UoICJwYWdlMiIgKQ0KICAgICAgRUNITyAiPHVsPjxoMT5UaGlzIGlzIHBhZ2UgbnVtYmVyIHR3bzwvaDE+PC91bD4iDQogICBFTkQgV0lUSA0KDQpSRVRVUk4gb1BhZ2UNCg0KLy8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0NCg0KTUVUSE9EIEFjdF9QYWdlMygpIENMQVNTIFdEb2NNYWluDQoNCiAgIExPQ0FMIG9QYWdlDQoNCiAgIFdJVEggT0JKRUNUIG9QYWdlIDo9IDo6QWRkUGFnZSggInBhZ2UzIiApDQogICAgICBFQ0hPICI8dWw+PGgxPlRoaXMgaXMgcGFnZSBudW1iZXIgdGhyZWU8L2gxPjwvdWw+Ig0KICAgRU5EIFdJVEgNCg0KUkVUVVJOIG9QYWdlDQoNCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQoNCk1FVEhPRCBGcm1fUGFnZUNoZWNrKCBoUGFyYW1zICkgQ0xBU1MgV0RvY01haW4NCg0KICAgTE9DQUwgb1BhZ2UNCg0KICAgOjpjVXNlciA6PSBoUGFyYW1zWyAiZW1haWwiIF0NCg0KICAgV0lUSCBPQkpFQ1Qgb1BhZ2UgOj0gOjpBZGRQYWdlKCAiY2hlY2tsb2dpbiIgKQ0KICAgICAgRUNITyAiPHVsPiINCiAgICAgIEVDSE8gIjxoMT5Mb2dpbiBzdWNjZXNzZnVsPC9oMT4iDQogICAgICBFQ0hPICI8cD5XZWxjb21lICIgKyBoUGFyYW1zWyAiZW1haWwiIF0gKyAiITwvcD4iDQogICAgICBFQ0hPICI8L3VsPiINCiAgIEVORCBXSVRIDQoNClJFVFVSTiBvUGFnZQ0KDQovLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQ0K</textarea>
+  </x-page>
+  <script src="/js/xw_backpack.js"></script>
+  <script>
+       ta = document.getElementById("source");
+       if (ta) {
+          ta.value = xw_b64toUnicode(ta.value);
+       }
+       delete ta;
+  </script>
+  <script>
+    function setTheme(name) {
+      const dark   = ["#00001a","DarkSlateBlue","white","LightGray","Navy","cornflowerblue","white","MediumVioletRed","HotPink","DimGray","Gold","PaleGoldenrod","Black","LightSteelBlue","64"];
+      const light  = ["white","whitesmoke","black","gray","Tan","Wheat","black","Teal","LightSeaGreen","DimGray","SkyBlue","LightBlue","Black","Bisque","255"];
+      const dColor = ["body-color","body-alt-color","body-text-color","body-text-mutted-color","primary-color","primary-hover-color","primary-text-color","secondary-color","secondary-hover-color","secondary-text-color","accent-color","accent-text-color","accent-hover-color","border-color","gr-color"];
+      const root   = document.documentElement;
+      if (name === "auto" ) {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          name = "dark";
+        } else {
+          name = "light";
+        }
+      }
+      const vColor = (name === "dark" ? dark : light);
+      dColor.forEach((v, i) => {
+        root.style.setProperty(`--${v}`, vColor[i]);
+      });
+    }
+    document.addEventListener("DOMContentLoaded", () => {
+      let savedTheme = "light";
+      if (savedTheme === "") {
+        savedTheme = localStorage.getItem("theme") || "auto";
+      }
+      setTheme(savedTheme);
+      for (const optionElement of document.querySelectorAll("#selTheme option")) {
+        optionElement.selected = savedTheme === optionElement.value;
+      }
+      const selector = document.querySelector("#selTheme");
+      if (selector) {
+        selector.addEventListener("change", () => {
+          localStorage.setItem("theme", this.value);
+          setTheme(this.value);
+        });
+      }
+    });
+  </script>
+  <script>
+    const fv_Frm_PageCheck = new xw_FormValidator("#Frm_PageCheck");
+    const xw_docName  = "wdocmain";
+    var xw_mapProp  = new Map(); 
+    var xw_mapEvent = new Map(); 
+    var xw_mapPost  = new Map(); 
+    xw_mapProp.set('email', {"cvalue":""});
+    xw_mapProp.set('password', {"cvalue":""});
+    xw_mapProp.set('button', {"ldisabled":false});
+    xw_mapEvent.set('Frm_PageCheck', {"onsubmit":"xw_submit"});
+    xw_deleteCookie("event");
+    xw_deleteCookie("state");
+    for (const [key, obj] of xw_mapEvent) {
+      for(const[eve, val] of Object.entries(obj)) {
+        const ele = document.getElementById(key);
+        if (ele) {
+          xw_processEvent(ele, eve, val);
+        }
+      }
+    }
+  </script>
+</body>
+</html>
+
+Execute time in milliseconds:         11

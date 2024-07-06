@@ -1,0 +1,100 @@
+dbg> Query string: action=wdocmain-Act_Page3
+dbg> Get-Param action:wdocmain-Act_Page3
+dbg> Get-Cookie session:1f7a932d285141233710f5193d724834535776a0
+--------------------------------------------------------------------------------
+status: 200
+Content-type: text/html
+Set-Cookie: session=1f7a932d285141233710f5193d724834535776a0; Path=/; SameSite=strict; Max-Age=3600
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Nav</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="/css/xw_BasicContext.css">
+</head>
+<body>
+  <x-page id="default">
+    <h1>XailerWeb - Simple Nav demo</h1>
+    <nav>
+      <ul>
+      <a href="?action=wdocmain-Act_Page1">First page</a>
+      <a href="?action=wdocmain-Act_Page2">Second page</a>
+      <a href="?action=wdocmain-Act_Page3">Third page</a>
+      </ul>
+    </nav>
+  </x-page>
+  <x-page id="page3">
+    <ul><h1>This is page number three</h1></ul>
+  </x-page>
+  <x-page id="code">
+    <hr>
+    <textarea rows="40" cols="80" readonly id="source">Ly8gaHR0cHM6Ly90ZXN0LnhhaWxlci5jb20vY2dpLWJpbi94YWlsZXJ3ZWIvbmF2LmNnaQ0KDQojaW5jbHVkZSAiWGFpbGVyV2ViLmNoIg0KDQpDTEFTUyBXRG9jTWFpbiBGUk9NIFdEb2MNCg0KICAgTUVUSE9EIENyZWF0ZURvYygpDQoNCiAgIE1FVEhPRCBEZWZhdWx0UGFnZSgpDQogICBNRVRIT0QgQWN0X1BhZ2UxKCkNCiAgIE1FVEhPRCBBY3RfUGFnZTIoKQ0KICAgTUVUSE9EIEFjdF9QYWdlMygpDQogICBNRVRIT0QgQ29kZVBhZ2UoKQ0KDQpFTkQgQ0xBU1MNCg0KTUVUSE9EIENyZWF0ZURvYygpIENMQVNTIFdEb2NNYWluDQoNCiAgICNJRkRFRiBfTElOVVhfDQogICAgICBFbmdpbmU6Y0xvZ0ZpbGUgOj0gIi9tbnQvYy94YWlsZXJ3ZWIvc2FtcGxlcy8wOC1OYXYvZXJyb3IubG9nIg0KICAgI0VORElGDQoNCiAgIEVuZ2luZTpsRGVidWcgOj0gLnQuDQoNCiAgIFdJVEggT0JKRUNUIFdCYXNpY0NvbnRleHQoKTpOZXcoIFNlbGYgKQ0KICAgICAgOmNUaGVtZSA6PSAibGlnaHQiDQogICBFTkQgV0lUSA0KDQogICA6OkRlZmF1bHRQYWdlKCkNCiAgIDo6Q29kZVBhZ2UoKQ0KDQpSRVRVUk4gbmlsDQoNCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQoNCk1FVEhPRCBEZWZhdWx0UGFnZSgpIENMQVNTIFdEb2NNYWluDQoNCiAgIExPQ0FMIG9QYWdlDQoNCiAgIFdJVEggT0JKRUNUIG9QYWdlIDo9IDo6QWRkUGFnZSggImRlZmF1bHQiICkNCiAgICAgIDpsRm9yY2VkIDo9IC50Lg0KICAgICAgRUNITyAiPGgxPlhhaWxlcldlYiAtIFNpbXBsZSBOYXYgZGVtbzwvaDE+Ig0KDQogICAgICBXSVRIIE9CSkVDVCBXTmF2KCk6TmV3KCBvUGFnZSApDQogICAgICAgICBFQ0hPICI8dWw+Ig0KICAgICAgICAgV0lUSCBPQkpFQ1QgV0xpbmsoKTpOZXcoIFNPICkNCiAgICAgICAgICAgIDpjVGV4dCA6PSAiRmlyc3QgcGFnZSINCiAgICAgICAgICAgIDpjSHJlZiA6PSA6OkFjdGlvbiggIkFjdF9QYWdlMSIgKQ0KICAgICAgICAgRU5EIFdJVEgNCiAgICAgICAgIFdJVEggT0JKRUNUIFdMaW5rKCk6TmV3KCBTTyApDQogICAgICAgICAgICA6Y1RleHQgOj0gIlNlY29uZCBwYWdlIg0KICAgICAgICAgICAgOmNIcmVmIDo9IDo6QWN0aW9uKCAiQWN0X1BhZ2UyIiApDQogICAgICAgICBFTkQgV0lUSA0KICAgICAgICAgV0lUSCBPQkpFQ1QgV0xpbmsoKTpOZXcoIFNPICkNCiAgICAgICAgICAgIDpjVGV4dCA6PSAiVGhpcmQgcGFnZSINCiAgICAgICAgICAgIDpjSHJlZiA6PSA6OkFjdGlvbiggIkFjdF9QYWdlMyIgKQ0KICAgICAgICAgRU5EIFdJVEgNCiAgICAgICAgIEVDSE8gIjwvdWw+Ig0KICAgICAgRU5EIFdJVEgNCiAgIEVORCBXSVRIDQoNClJFVFVSTiBvUGFnZQ0KDQovLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQ0KDQpNRVRIT0QgQWN0X1BhZ2UxKCkgQ0xBU1MgV0RvY01haW4NCg0KICAgTE9DQUwgb1BhZ2UNCg0KICAgV0lUSCBPQkpFQ1Qgb1BhZ2UgOj0gOjpBZGRQYWdlKCAicGFnZTEiICkNCiAgICAgIEVDSE8gIjx1bD48aDE+VGhpcyBpcyBwYWdlIG51bWJlciBvbmU8L2gxPjwvdWw+Ig0KICAgRU5EIFdJVEgNCg0KUkVUVVJOIG9QYWdlDQoNCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQoNCk1FVEhPRCBBY3RfUGFnZTIoKSBDTEFTUyBXRG9jTWFpbg0KDQogICBMT0NBTCBvUGFnZQ0KDQogICBXSVRIIE9CSkVDVCBvUGFnZSA6PSA6OkFkZFBhZ2UoICJwYWdlMiIgKQ0KICAgICAgRUNITyAiPHVsPjxoMT5UaGlzIGlzIHBhZ2UgbnVtYmVyIHR3bzwvaDE+PC91bD4iDQogICBFTkQgV0lUSA0KDQpSRVRVUk4gb1BhZ2UNCg0KLy8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0NCg0KTUVUSE9EIEFjdF9QYWdlMygpIENMQVNTIFdEb2NNYWluDQoNCiAgIExPQ0FMIG9QYWdlDQoNCiAgIFdJVEggT0JKRUNUIG9QYWdlIDo9IDo6QWRkUGFnZSggInBhZ2UzIiApDQogICAgICBFQ0hPICI8dWw+PGgxPlRoaXMgaXMgcGFnZSBudW1iZXIgdGhyZWU8L2gxPjwvdWw+Ig0KICAgRU5EIFdJVEgNCg0KUkVUVVJOIG9QYWdlDQoNCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQoNCk1FVEhPRCBDb2RlUGFnZSgpIENMQVNTIFdEb2NNYWluDQoNCiAgIExPQ0FMIG9QYWdlDQogICBMT0NBTCBjQ29kZSwgY0pzDQoNCiAgIFRFWFQgSU5UTyBjSnMNCiAgICAgIHRhID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInNvdXJjZSIpOw0KICAgICAgaWYgKHRhKSB7DQogICAgICAgICB0YS52YWx1ZSA9IHh3X2I2NHRvVW5pY29kZSh0YS52YWx1ZSk7DQogICAgICB9DQogICAgICBkZWxldGUgdGE7DQogICBFTkRURVhUDQoNCiAgIDo6QWRkU2NyaXB0KCBjSnMgKQ0KDQogICBXSVRIIE9CSkVDVCBvUGFnZSA6PSA6OkFkZFBhZ2UoICJjb2RlIiApDQogICAgICA6bEZvcmNlZCA6PSAudC4NCiAgICAgIDpsRm9vdGVyIDo9IC50Lg0KDQogICAgICBFQ0hPICI8aHI+Ig0KDQogICAgICBGSUxFICJEb2NNYWluLnByZyIgSU5UTyBjQ29kZQ0KDQogICAgICBXSVRIIE9CSkVDVCBXVGV4dEFyZWEoKTpOZXcoIG9QYWdlICkNCiAgICAgICAgIDpuQ29scyA6PSA4MA0KICAgICAgICAgOmNJZCAgIDo9ICJzb3VyY2UiDQogICAgICAgICA6blJvd3MgOj0gNDANCiAgICAgICAgIDpjVGV4dCA6PSBIQl9CYXNlNjRFbmNvZGUoIGNDb2RlICkNCiAgICAgICAgIDpsUmVhZE9ubHkgOj0gLnQuDQogICAgICAgICA6Q3JlYXRlKCkNCiAgICAgIEVORCBXSVRIDQogICBFTkQgV0lUSA0KDQpSRVRVUk4gb1BhZ2UNCg0KLy8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0NCg0K</textarea>
+  </x-page>
+  <script src="/js/xw_backpack.js"></script>
+  <script>
+       ta = document.getElementById("source");
+       if (ta) {
+          ta.value = xw_b64toUnicode(ta.value);
+       }
+       delete ta;
+  </script>
+  <script>
+    function setTheme(name) {
+      const dark   = ["#00001a","DarkSlateBlue","white","LightGray","Navy","cornflowerblue","white","MediumVioletRed","HotPink","DimGray","Gold","PaleGoldenrod","Black","LightSteelBlue","64"];
+      const light  = ["white","whitesmoke","black","gray","Tan","Wheat","black","Teal","LightSeaGreen","DimGray","SkyBlue","LightBlue","Black","Bisque","255"];
+      const dColor = ["body-color","body-alt-color","body-text-color","body-text-mutted-color","primary-color","primary-hover-color","primary-text-color","secondary-color","secondary-hover-color","secondary-text-color","accent-color","accent-text-color","accent-hover-color","border-color","gr-color"];
+      const root   = document.documentElement;
+      if (name === "auto" ) {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          name = "dark";
+        } else {
+          name = "light";
+        }
+      }
+      const vColor = (name === "dark" ? dark : light);
+      dColor.forEach((v, i) => {
+        root.style.setProperty(`--${v}`, vColor[i]);
+      });
+    }
+    document.addEventListener("DOMContentLoaded", () => {
+      let savedTheme = "light";
+      if (savedTheme === "") {
+        savedTheme = localStorage.getItem("theme") || "auto";
+      }
+      setTheme(savedTheme);
+      for (const optionElement of document.querySelectorAll("#selTheme option")) {
+        optionElement.selected = savedTheme === optionElement.value;
+      }
+      const selector = document.querySelector("#selTheme");
+      if (selector) {
+        selector.addEventListener("change", () => {
+          localStorage.setItem("theme", this.value);
+          setTheme(this.value);
+        });
+      }
+    });
+  </script>
+  <script>
+    const xw_docName  = "wdocmain";
+    var xw_mapProp  = new Map(); 
+    var xw_mapEvent = new Map(); 
+    var xw_mapPost  = new Map(); 
+    xw_deleteCookie("event");
+    xw_deleteCookie("state");
+    for (const [key, obj] of xw_mapEvent) {
+      for(const[eve, val] of Object.entries(obj)) {
+        const ele = document.getElementById(key);
+        if (ele) {
+          xw_processEvent(ele, eve, val);
+        }
+      }
+    }
+  </script>
+</body>
+</html>
+
+Execute time in milliseconds:         12

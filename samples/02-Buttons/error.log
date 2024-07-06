@@ -1,0 +1,131 @@
+dbg> Get-Cookie session:1f7a932d285141233710f5193d724834535776a0
+--------------------------------------------------------------------------------
+status: 200
+Content-type: text/html
+Set-Cookie: session=1f7a932d285141233710f5193d724834535776a0; Path=/; SameSite=strict; Max-Age=3600
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Buttons</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href="/css/xw_BasicContext.css">
+  <script type="module">
+    import { CmpButtonSpinner } from "/js/xw_CmpButtonSpinner.js"
+    customElements.define("button-spinner", CmpButtonSpinner );
+  </script>
+
+</head>
+<body>
+  <x-page id="default">
+    <h1>XailerWeb - Buttons</h1>
+    <button type="button" id="button1" data-document="wdocmain" onclick="(function(e){alert( 'Click!' );})()">This button fires a inline Javascript code</button>
+    <p></p>
+    <button type="button" id="button2" data-document="wdocmain" onclick="myfunction">This button fires a Javascript user function</button>
+    <p></p>
+    <button-spinner type="button" id="button3" onclick='xw_fetch( "mycity", "button3", "citySolver", "http://ip-api.com/json/Oz Software",{"method":"GET","headers": {"Content-type":"application/json"}});'>This button calls an asyncronous API</button-spinner>
+    <span id="mycity">Where is Xailer web site server?</span>
+    <p>Please push this button after pushing the previous one</p>
+    <button type="button" id="button4" data-document="wdocmain" onclick="@Act_Click">This button fires a CGI XailerWeb event</button>
+    <p>Insert some text on this field and confirm it does NOT disappear when pushing the previous button.</p>
+    <div class="xw-input">
+      <label for="myEdit" class="xw-input__label">Label:</label>
+      <input type="text" name="myEdit" id="myEdit" class="xw-input__input" style="width: 50ch;">
+      <div class="xw-input__error"></div>
+    </div>
+    <p></p>
+    <button type="button" id="btnsource" data-document="wdocmain" onclick="showCode">This button shows XailerWeb source code</button>
+    <p><hr></p>
+    <textarea rows="40" cols="80" readonly id="source" hidden>I2luY2x1ZGUgIlhhaWxlcldlYi5jaCINCg0KQ0xBU1MgV0RvY01haW4gRlJPTSBXRG9jDQoNCiAgIE1FVEhPRCBDcmVhdGVEb2MoKQ0KDQogICBNRVRIT0QgQWN0X0NsaWNrKCBoRXZlbnQgKQ0KDQpFTkQgQ0xBU1MNCg0KTUVUSE9EIENyZWF0ZURvYygpIENMQVNTIFdEb2NNYWluDQoNCiAgIExPQ0FMIG9GZXRjaCBBUyBDTEFTUyBXRmV0Y2gNCiAgIExPQ0FMIGNKcywgY1VybCwgY0NvZGUNCg0KICAgV0lUSCBPQkpFQ1QgV0Jhc2ljQ29udGV4dCgpOk5ldyggU2VsZiApDQogICAgICA6Y1RoZW1lIDo9ICJkYXJrIg0KICAgRU5EIFdJVEgNCg0KICAgVEVYVCBJTlRPIGNKcw0KICAgICAgZnVuY3Rpb24gbXlmdW5jdGlvbihlKSB7DQogICAgICAgICBhbGVydCggJ0NsaWNrIHRyaWdnZXJlZCBmcm9tIGEgdXNlciBmdW5jdGlvbicgKTsNCiAgICAgIH0NCg0KICAgICAgZnVuY3Rpb24gY2l0eVNvbHZlcihlbGVtZW50LCBkYXRhKSB7DQogICAgICAgICBpZiAoZGF0YS5jaXR5KSB7DQogICAgICAgICAgICAgZWxlbWVudC5pbm5lckhUTUwgPSAnWGFpbGVyIHNlcnZlciBpcyBhdCAnICsgZGF0YS5jaXR5Ow0KICAgICAgICAgICAgIHh3X3NldEhiRGF0YShlbGVtZW50LCAnY1RleHQnLCBlbGVtZW50LmlubmVyVGV4dCwgdHJ1ZSk7DQogICAgICAgICB9DQogICAgICAgICBlbHNlDQogICAgICAgICAgICBlbGVtZW50LmlubmVySFRNTCA9ICdDaXR5IGNvdWxkIG5vdCBiZSBmb3VuZCc7DQogICAgICB9DQoNCiAgICAgIGZ1bmN0aW9uIHNob3dDb2RlKCkgew0KICAgICAgICAgY29uc3QgZWxlID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInNvdXJjZSIpOw0KICAgICAgICAgaWYgKGVsZSkgew0KICAgICAgICAgICAgZWxlLnZhbHVlID0geHdfYjY0dG9Vbmljb2RlKGVsZS52YWx1ZSk7DQogICAgICAgICAgICBlbGUuaGlkZGVuID0gZmFsc2U7DQogICAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiYnRuc291cmNlIikuZGlzYWJsZWQgPSB0cnVlOw0KICAgICAgICAgfQ0KICAgICAgfQ0KICAgRU5EVEVYVA0KDQogICAjaWZkZWYgX0xJTlVYXw0KICAgICAgRW5naW5lOmNMb2dGaWxlIDo9ICIvbW50L2MveGFpbGVyd2ViL3NhbXBsZXMvMDItYnV0dG9ucy9lcnJvci5sb2ciDQogICAjZW5kaWYNCg0KICAgRW5naW5lOmxEZWJ1ZyA6PSAudC4NCg0KICAgV0lUSCBPQkpFQ1QgV1RleHQoKTpOZXcoIFNlbGYgKQ0KICAgICAgOmNUZXh0IDo9ICI8aDE+WGFpbGVyV2ViIC0gQnV0dG9uczwvaDE+Ig0KICAgICAgOkNyZWF0ZSgpDQogICBFTkQgV0lUSA0KDQogICBXSVRIIE9CSkVDVCBXQnV0dG9uKCk6TmV3KCBTZWxmICkNCiAgICAgIDpjVGV4dCA6PSAiVGhpcyBidXR0b24gZmlyZXMgYSBpbmxpbmUgSmF2YXNjcmlwdCBjb2RlIg0KICAgICAgOk9uQ2xpY2sgOj0gIjxzY3JpcHQ+YWxlcnQoICdDbGljayEnICk8L3NjcmlwdD4iDQogICAgICA6Y0lkIDo9ICJidXR0b24xIg0KICAgICAgOkNyZWF0ZSgpDQogICBFTkQgV0lUSA0KDQogICBXVGV4dCgpOk5ldyggU2VsZiApOmNUZXh0IDo9ICI8cD48L3A+Ig0KDQogICBXSVRIIE9CSkVDVCBXQnV0dG9uKCk6TmV3KCBTZWxmICkNCiAgICAgIDpjVGV4dCA6PSAiVGhpcyBidXR0b24gZmlyZXMgYSBKYXZhc2NyaXB0IHVzZXIgZnVuY3Rpb24iDQogICAgICA6T25DbGljayA6PSAibXlmdW5jdGlvbiINCiAgICAgIDpjSWQgOj0gImJ1dHRvbjIiDQogICAgICA6Q3JlYXRlKCkNCiAgIEVORCBXSVRIDQoNCiAgIFdUZXh0KCk6TmV3KCBTZWxmICk6Y1RleHQgOj0gIjxwPjwvcD4iDQoNCiAgIElGIEVuZ2luZTpJc1NlY3VyZSgpDQogICAgICBjVXJsIDo9ICJodHRwczovL2lwaW5mby5pby8zOC4yNDIuMjAzLjE4MC9qc29uIg0KICAgRUxTRQ0KICAgICAgY1VybCA6PSAiaHR0cDovL2lwLWFwaS5jb20vanNvbi94YWlsZXIuY29tIg0KICAgRU5ESUYNCg0KICAgb0ZldGNoIDo9IFdGZXRjaCgpOk5ldyggY1VybCApDQoNCiAgIFdJVEggT0JKRUNUIG9GZXRjaA0KICAgICAgOmNUYXJnZXRJZCA6PSAibXljaXR5Ig0KICAgICAgOmNTb3VyY2VJZCA6PSAiYnV0dG9uMyINCiAgICAgIDpjQ2FsbEJhY2sgOj0gImNpdHlTb2x2ZXIiDQogICBFTkQgV0lUSA0KDQogICBXSVRIIE9CSkVDVCBaY21wQnV0dG9uU3Bpbm5lcigpOk5ldyggU2VsZiApDQogICAgICA6Y1RleHQgOj0gIlRoaXMgYnV0dG9uIGNhbGxzIGFuIGFzeW5jcm9ub3VzIEFQSSINCiAgICAgIDpPbkNsaWNrIDo9IG9GZXRjaA0KICAgICAgOmNJZCA6PSAiYnV0dG9uMyINCiAgICAgIDpDcmVhdGUoKQ0KICAgRU5EIFdJVEgNCg0KICAgV0lUSCBPQkpFQ1QgV1RleHQoKTpOZXcoIFNlbGYgKQ0KICAgICAgOmNUZXh0IDo9ICJXaGVyZSBpcyBYYWlsZXIgd2ViIHNpdGUgc2VydmVyPyINCiAgICAgIDpjSWQgOj0gIm15Y2l0eSINCiAgICAgIDpDcmVhdGUoKQ0KICAgRU5EIFdJVEgNCg0KICAgV1RleHQoKTpOZXcoIFNlbGYgKTpjVGV4dCA6PSAiPHA+UGxlYXNlIHB1c2ggdGhpcyBidXR0b24gYWZ0ZXIgcHVzaGluZyB0aGUgcHJldmlvdXMgb25lPC9wPiINCg0KICAgV0lUSCBPQkpFQ1QgV0J1dHRvbigpOk5ldyggU2VsZiApDQogICAgICA6Y1RleHQgOj0gIlRoaXMgYnV0dG9uIGZpcmVzIGEgQ0dJIFhhaWxlcldlYiBldmVudCINCiAgICAgIDpPbkNsaWNrIDo9ICJBY3RfQ2xpY2siDQogICAgICA6Y0lkIDo9ICJidXR0b240Ig0KICAgICAgOkNyZWF0ZSgpDQogICBFTkQgV0lUSA0KDQogICBXVGV4dCgpOk5ldyggU2VsZiApOmNUZXh0IDo9ICI8cD5JbnNlcnQgc29tZSB0ZXh0IG9uIHRoaXMgZmllbGQgYW5kIGNvbmZpcm0gaXQgZG9lcyBOT1QgZGlzYXBwZWFyIHdoZW4gcHVzaGluZyB0aGUgcHJldmlvdXMgYnV0dG9uLjwvcD4iDQoNCiAgIFdJVEggT0JKRUNUIFdFZGl0KCk6TmV3KCBTZWxmICkNCiAgICAgIDpjTGFiZWwgOj0gIkxhYmVsOiINCiAgICAgIDpjSWQgOj0gIm15RWRpdCINCiAgICAgIDpuU2l6ZSA6PSA1MA0KICAgICAgOkNyZWF0ZSgpDQogICBFTkQgV0lUSA0KDQogICBXVGV4dCgpOk5ldyggU2VsZiApOmNUZXh0IDo9ICI8cD48L3A+Ig0KDQogICBXSVRIIE9CSkVDVCBXQnV0dG9uKCk6TmV3KCBTZWxmICkNCiAgICAgIDpjVGV4dCA6PSAiVGhpcyBidXR0b24gc2hvd3MgWGFpbGVyV2ViIHNvdXJjZSBjb2RlIg0KICAgICAgOk9uY2xpY2sgOj0gInNob3dDb2RlIg0KICAgICAgOmNJZCA6PSAiYnRuc291cmNlIg0KICAgICAgOkNyZWF0ZSgpDQogICBFTkQgV0lUSA0KDQogICBXVGV4dCgpOk5ldyggU2VsZiApOmNUZXh0IDo9ICI8cD48aHI+PC9wPiINCg0KICAgRklMRSAiRG9jTWFpbi5wcmciIElOVE8gY0NvZGUNCg0KICAgV0lUSCBPQkpFQ1QgV1RleHRBcmVhKCk6TmV3KCBTZWxmICkNCiAgICAgIDpuQ29scyA6PSA4MA0KICAgICAgOmNJZCAgIDo9ICJzb3VyY2UiDQogICAgICA6blJvd3MgOj0gNDANCiAgICAgIDpjVGV4dCA6PSBIQl9CYXNlNjRFbmNvZGUoIGNDb2RlICkNCiAgICAgIDpsVmlzaWJsZSA6PSAuZi4NCiAgICAgIDpsUmVhZE9ubHkgOj0gLnQuDQogICAgICA6Q3JlYXRlKCkNCiAgIEVORCBXSVRIDQoNCiAgIDo6QWRkU2NyaXB0KCBjSnMgKTpsQm90dG9tIDo9IC50Lg0KDQogICAvL0VuZ2luZTpMb2dFbnYoKQ0KDQpSRVRVUk4gbmlsDQoNCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tDQoNCk1FVEhPRCBBY3RfQ2xpY2soIGhFdmVudCApIENMQVNTIFdEb2NNYWluDQoNCiAgIExPQ0FMIGNIdG1sDQoNCiAgIFRFWFQgSU5UTyBjSHRtbA0KICAgICAgPHA+VGhpcyBuZXcgcGFyYWdyYXBoIGhhcyBiZWVuIGNyZWF0ZWQgdGhyb3VnaCBhIENHSSBmaXJlZCBldmVudC48L3A+DQogICAgICA8cD5JZiB5b3UgaGFkIHB1c2hlZCB0aGUgdGhpcmQgYnV0dG9uIGJlZm9yZSBjYWxsaW5nIHRoaXMgZm91cnRoIGJ1dHRvbiwNCiAgICAgIHRha2UgYSBsb29rIGF0IHRleHQgb2YgdGhlIGNpdHkgd2hlcmUgeGFpbGVyLmNvbSBzZXJ2ZXIgaXMuIEFzIHlvdSBjYW4NCiAgICAgIHNlZSwgdGhlIGNpdHkgbmFtZSBjb250aW51ZXMgdGhlcmUuIFhhaWxlcldlYiBtYWdpYyEiPC9wPg0KICAgRU5EVEVYVA0KDQogICBXVGV4dCgpOk5ldyggU2VsZiApOmNUZXh0IDo9IGNIdG1sDQoNClJFVFVSTiBOSUw=</textarea>
+  </x-page>
+  <script src="/js/xw_backpack.js"></script>
+  <script>
+       function myfunction(e) {
+          alert( 'Click triggered from a user function' );
+       }
+       function citySolver(element, data) {
+          if (data.city) {
+              element.innerHTML = 'Xailer server is at ' + data.city;
+              xw_setHbData(element, 'cText', element.innerText, true);
+          }
+          else
+             element.innerHTML = 'City could not be found';
+       }
+       function showCode() {
+          const ele = document.getElementById("source");
+          if (ele) {
+             ele.value = xw_b64toUnicode(ele.value);
+             ele.hidden = false;
+             document.getElementById("btnsource").disabled = true;
+          }
+       }
+  </script>
+  <script>
+    function setTheme(name) {
+      const dark   = ["#00001a","DarkSlateBlue","white","LightGray","Navy","cornflowerblue","white","MediumVioletRed","HotPink","DimGray","Gold","PaleGoldenrod","Black","LightSteelBlue","64"];
+      const light  = ["white","whitesmoke","black","gray","Tan","Wheat","black","Teal","LightSeaGreen","DimGray","SkyBlue","LightBlue","Black","Bisque","255"];
+      const dColor = ["body-color","body-alt-color","body-text-color","body-text-mutted-color","primary-color","primary-hover-color","primary-text-color","secondary-color","secondary-hover-color","secondary-text-color","accent-color","accent-text-color","accent-hover-color","border-color","gr-color"];
+      const root   = document.documentElement;
+      if (name === "auto" ) {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          name = "dark";
+        } else {
+          name = "light";
+        }
+      }
+      const vColor = (name === "dark" ? dark : light);
+      dColor.forEach((v, i) => {
+        root.style.setProperty(`--${v}`, vColor[i]);
+      });
+    }
+    document.addEventListener("DOMContentLoaded", () => {
+      let savedTheme = "dark";
+      if (savedTheme === "") {
+        savedTheme = localStorage.getItem("theme") || "auto";
+      }
+      setTheme(savedTheme);
+      for (const optionElement of document.querySelectorAll("#selTheme option")) {
+        optionElement.selected = savedTheme === optionElement.value;
+      }
+      const selector = document.querySelector("#selTheme");
+      if (selector) {
+        selector.addEventListener("change", () => {
+          localStorage.setItem("theme", this.value);
+          setTheme(this.value);
+        });
+      }
+    });
+  </script>
+  <script>
+    const xw_docName  = "wdocmain";
+    var xw_mapProp  = new Map(); 
+    var xw_mapEvent = new Map(); 
+    var xw_mapPost  = new Map(); 
+    xw_mapProp.set('button1', {"ldisabled":false});
+    xw_mapProp.set('button2', {"ldisabled":false});
+    xw_mapProp.set('button3', {"ldisabled":false});
+    xw_mapProp.set('mycity', {"cvalue":""});
+    xw_mapProp.set('button4', {"ldisabled":false});
+    xw_mapProp.set('myEdit', {"cvalue":""});
+    xw_mapProp.set('btnsource', {"ldisabled":false});
+    xw_mapEvent.set('button2', {"onclick":"myfunction"});
+    xw_mapEvent.set('button4', {"onclick":"@Act_Click"});
+    xw_mapEvent.set('btnsource', {"onclick":"showCode"});
+    xw_deleteCookie("event");
+    xw_deleteCookie("state");
+    for (const [key, obj] of xw_mapEvent) {
+      for(const[eve, val] of Object.entries(obj)) {
+        const ele = document.getElementById(key);
+        if (ele) {
+          xw_processEvent(ele, eve, val);
+        }
+      }
+    }
+  </script>
+</body>
+</html>
+
+Execute time in milliseconds:         10

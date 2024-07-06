@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<Project>
+   <Type Value="lib"/>
+   <Description Value="XailerWebLinux"/>
+   <Output Value="lib\libXailerWebLinux.a"/>
+   <XailerVersion Value="9.0"/>
+   <Compiler Value="Harbour"/>
+   <CCompiler Value="GCCLinux"/>
+   <Font Value="MS Sans Serif,8"/>
+   <MainModule Value="zBasic.prg"/>
+   <MultipleInstances Value="Y"/>
+   <XPManifest Value="Y"/>
+   <Icon Value=""/>
+   <Parameters Value=""/>
+   <Charset Value="UTF-8"/>
+   <Version>
+      <Version Value="0.3"/>
+      <Release Value="0"/>
+      <Build Value="3"/>
+      <Company Value="OZ Software"/>
+      <CopyRight Value=""/>
+      <TradeMarks Value=""/>
+      <Comments Value=""/>
+   </Version>
+   <Directories>
+      <SourceDir Value="Source"/>
+      <IncludeDir Value="Include"/>
+      <ResourceDir Value="Resource"/>
+      <ObjDir Value="Obj"/>
+   </Directories>
+   <Options>
+      <AutomaticMemvarDeclaration Value="N"/>
+      <DebugInfo Value="N"/>
+      <SuppressLineNumberInformation Value="N"/>
+      <SuppressShortcutting Value="N"/>
+      <WarnningLevel Value="1"/>
+      <MoreOptions Value=""/>
+      <MoreCOpt Value=""/>
+      <MapFile Value="N"/>
+      <ConsoleMode Value="N"/>
+      <MoreLinkOpt Value=""/>
+   </Options>
+   <Export>
+      <Dir Value=""/>
+      <Source Value="Y"/>
+      <Exe Value="N"/>
+      <Bin Value="N"/>
+      <Resource Value="Y"/>
+      <ResourceAll Value="N"/>
+      <ErrorLog Value="N"/>
+      <Subprojects Value="Y"/>
+   </Export>
+   <Clean>
+      <All Value="N"/>
+   </Clean>
+   <FinalExe>
+      <FullCompile Value="N"/>
+      <TlbInfo Value="Y"/>
+      <UpxCompress Value="N"/>
+      <CompressFlags Value=""/>
+      <SignApp Value="N"/>
+      <CertName Value=""/>
+      <Installer Value="N"/>
+      <InstallerFlags Value=""/>
+      <SignInstaller Value="N"/>
+      <InstallerFile Value=""/>
+   </FinalExe>
+   <VCS>
+      <Type Value="None"/>
+      <XVC Value=".xvc\XailerWebLinux.xvc"/>
+      <XVCBackup Value=".xvc\XailerWebLinux_Backup.xvc"/>
+   </VCS>
+   <Files>
+      <File Filename="zBasic.prg"/>
+      <File Filename="zbutton.prg"/>
+      <File Filename="zCheckbox.prg"/>
+      <File Filename="zColor.prg"/>
+      <File Filename="zControl.prg"/>
+      <File Filename="zDateTime.prg"/>
+      <File Filename="zDiv.prg"/>
+      <File Filename="zEmail.prg"/>
+      <File Filename="zFetch.prg"/>
+      <File Filename="zFile.prg"/>
+      <File Filename="zInput.prg"/>
+      <File Filename="zLabel.prg"/>
+      <File Filename="zMeta.prg"/>
+      <File Filename="zNumber.prg"/>
+      <File Filename="zRadio.prg"/>
+      <File Filename="zRange.prg"/>
+      <File Filename="zScript.prg"/>
+      <File Filename="zCookie.prg"/>
+      <File Filename="zUtil.prg"/>
+      <File Filename="Internal\zDoc.prg"/>
+      <File Filename="Internal\zEngine.prg"/>
+      <File Filename="zApp.prg"/>
+      <File Filename="zParagraph.prg"/>
+      <File Filename="zContainer.prg"/>
+      <File Filename="xailerweb.ch"/>
+      <File Filename="zEdit.prg"/>
+      <File Filename="zTextArea.prg"/>
+      <File Filename="zForm.prg"/>
+      <File Filename="zFieldset.prg"/>
+      <File Filename="zCss.prg"/>
+      <File Filename="zDocPage.prg"/>
+      <File Filename="zListbox.prg"/>
+      <File Filename="zLink.prg"/>
+      <File Filename="zText.prg"/>
+      <File Filename="zInputImage.prg"/>
+      <File Filename="zImage.prg"/>
+      <File Filename="zRouter.prg"/>
+      <File Filename="Internal\zClass.c"/>
+      <File Filename="zTable.prg"/>
+      <File Filename="zNav.prg"/>
+      <File Filename="zHeader.prg"/>
+      <File Filename="zSession.prg"/>
+      <File Filename="xw_bootstrap.ch"/>
+      <File Filename="zPackage.prg"/>
+      <File Filename="zBasicContext.prg"/>
+      <File Filename="zWaterContext.prg"/>
+      <File Filename="zSimpleContext.prg"/>
+      <File Filename="zContext.prg"/>
+      <File Filename="zMain.prg"/>
+      <File Filename="zFooter.prg"/>
+      <File Filename="zCmpButtonIcon.prg"/>
+      <File Filename="wXailerWebLinux.xpj"/>
+      <File Filename="source\www\xw_backpack.js"/>
+      <File Filename="zModalMsgBtn.prg"/>
+      <File Filename="source\www\xw_BasicContext.css"/>
+      <File Filename="source\www\xw_CmpButtonIcon.js"/>
+      <File Filename="zRadioMenu.prg"/>
+      <File Filename="zCmpButtonSpinner.prg"/>
+      <File Filename="source\www\xw_CmpButtonSpinner.js"/>
+      <File Filename="zCmpNumericKeypad.prg"/>
+      <File Filename="source\www\xw_CmpNumericKeypad.js"/>
+      <File Filename="zStyle.prg"/>
+      <File Filename="zMaterializeContext.prg"/>
+   </Files>
+</Project>
+

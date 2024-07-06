@@ -1,0 +1,6 @@
+﻿*.docx
+*.a
+samples/01-HelloWorld/.xvc
+*.do
+*.lo
+*.o

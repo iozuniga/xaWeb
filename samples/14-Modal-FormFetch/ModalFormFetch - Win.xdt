@@ -1,0 +1,6 @@
+[OPTIONS]
+LockControls=.F.
+[DESKTOP]
+1=DocMain.prg,57,54,57,54,35,0,910
+2=ModalFormFetch.prg,0,0,0,0,0,0,820
+Current=1

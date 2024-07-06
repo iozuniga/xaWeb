@@ -1,0 +1,6 @@
+[OPTIONS]
+LockControls=.F.
+[DESKTOP]
+1=Login.prg,0,0,0,0,0,0,270
+2=DocMain.prg,84,15,84,15,75,0,270
+Current=2

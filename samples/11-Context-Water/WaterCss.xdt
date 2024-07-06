@@ -1,0 +1,6 @@
+[OPTIONS]
+LockControls=.F.
+[DESKTOP]
+1=WaterCss.prg,0,0,12,0,0,0,240
+2=DocMain.prg,0,0,129,0,0,0,2682
+Current=2

@@ -1,0 +1,6 @@
+[OPTIONS]
+LockControls=.F.
+[DESKTOP]
+1=DocMain.prg,120,0,120,0,109,0,1122
+2=listboxes.prg,8,48,8,40,0,0,480
+Current=1
