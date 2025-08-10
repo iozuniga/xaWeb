@@ -30,3 +30,36 @@ Reference Guide: https://xaweb.ozs.es/cgi-bin/xawebhelp.xaweb
 You can find a large set of examples, including source code, at the following examples:
 
 https://xaweb.ozs.es/cgi-bin/alltoghether.xaweb
+
+# License, support and updates:
+The license is perpetual and includes updates and support for one year. The user may, if desired, contract with OZ Software to renew support and updates for additional periods. The cost of this renewal is 50% of the product price at the time of renewal. Non-renewal means that you will have to purchase the full product if you decide to upgrade to the latest version of xaWeb in the future. OZ Software will send you a message with sufficient time to ensure you can upgrade in time.
+
+# Linux
+Linux is xaWeb’s preferred environment, as the most widely used web servers are mostly Linux.
+
+xaWeb has been developed under the Ubuntu Linux environment and Apache2 server, but it should have no problems with other operating systems and web servers. Harbour is the tool that truly offers this powerful compatibility.
+
+For development with xaWeb, we recommend using the Xailer IDE, which only works under Windows. Therefore, we recommend installing WSL to work together with both environments. WSL will give you the ability to compile Harbour applications from within Xailer itself and even display web pages created with a local Apache2 installation that you can integrate into WSL.
+
+# Windows
+Windows is also supported by xaWeb, as expected, and for many users it will be the preferred option thanks to the ability to access necessary external resources. xaWeb has been successfully tested on the following servers:
+
+- Apache server
+- Microsoft IIS
+- Sambar WebServer
+- Orelly Website
+  
+For development with xaWeb, we recommend the Xailer IDE, which also offers CGI debugging capabilities.
+
+# Requirements
+- Operating system: Windows 10/11.
+- Processor: Intel i5 or higher.
+- RAM: Minimum 8 GB (16 GB recommended).
+- Storage: SSD with at least 10 GB free.
+- Compiler Harbour.
+- Xailer 9.2 or Visual Studio Code + extensions for Harbor.
+- Version control tool such as GitHub or Svn version control.
+- WSL (Linux)
+
+# What's new:
+https://xaweb.ozs.es/cgi-bin/xawebhelp.xaweb?action=wdocmain-Act_ShowHelp&symbol=Actualizaciones,Updates
