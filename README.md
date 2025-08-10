@@ -1,4 +1,4 @@
-# ozweb
+# xaWeb
 xaWeb is a new development platform that allows you to quickly and easily create management applications for Web environments and Windows and Linux operating systems using only the Harbour development environment.
 
 The demo version is fully functional and includes the same source code as the commercial version, which is 90% of the entire xaWeb code. Its only limitation is that it can only be used for small projects.
