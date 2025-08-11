@@ -63,3 +63,6 @@ For development with xaWeb, we recommend the Xailer IDE, which also offers CGI d
 
 # What's new:
 https://xaweb.ozs.es/cgi-bin/xawebhelp.xaweb?action=wdocmain-Act_ShowHelp&symbol=Actualizaciones,Updates
+
+# Content on github:
+The contennt on github is the same code you receive when you download the DEMO version of xaWeb at https://www.ozs.es. The purpose of this publication is to make accesible most of xaWeb code to IA engines and curious people. ;-)
