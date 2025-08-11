@@ -1,0 +1,318 @@
+{
+  "forms":
+  [
+    {
+      "class": "WForm",
+      "name": "order",
+      "properties":
+      {
+        "cAcceptCharset": "utf-8",
+        "cId": "user",
+        "lFetch": ".T.",
+        "oStyle": {}
+      },
+      "events": {},
+      "controls":
+      [
+        {
+          "class": "WSpan",
+          "name": "title",
+          "properties":
+          {
+            "cId": "title",
+            "cText": "xaWeb order form",
+            "oStyle":
+            {
+              "Font_size": "40px;"
+            }
+          },
+          "events": {},
+          "controls": []
+        },
+        {
+          "class": "WFieldset",
+          "name": "fieldset",
+          "properties":
+          {
+            "cId": "fieldset",
+            "oStyle":
+            {
+              "Margin_bottom": "20px",
+              "Margin_top": "20px",
+              "Padding_top": "20px;"
+            }
+          },
+          "events": {},
+          "controls":
+          [
+            {
+              "class": "WEdit",
+              "name": "first_name",
+              "properties":
+              {
+                "cId": "first_name",
+                "cLabel": "Name: (required)",
+                "oStyle": {}
+              },
+              "events": {},
+              "controls": []
+            },
+            {
+              "class": "WEdit",
+              "name": "company",
+              "properties":
+              {
+                "cCache": "session",
+                "cId": "company",
+                "cLabel": "Company:",
+                "lNoPadding": "",
+                "lOutlined": "",
+                "oStyle": {}
+              },
+              "events": {},
+              "controls": []
+            },
+            {
+              "class": "WEdit",
+              "name": "cif",
+              "properties":
+              {
+                "cId": "cif",
+                "cLabel": "CIF: (required in the CEE)",
+                "oStyle": {}
+              },
+              "events": {},
+              "controls": []
+            },
+            {
+              "class": "WSpan",
+              "name": "user_11",
+              "properties":
+              {
+                "cId": "user_11",
+                "cText": "Geographic zone: (required)",
+                "oStyle":
+                {
+                  "Display": "block",
+                  "Padding": "1em;"
+                }
+              },
+              "events": {},
+              "controls": []
+            },
+            {
+              "class": "WSelect",
+              "name": "Zone",
+              "properties":
+              {
+                "aItems": "Spain (except Canary, Ceuta or Melilla) 21 % VAT\r\nRest of Spain 0% VAT\r\nEuropean Union (company or professional, VAT number required) 0% VAT\r\nEuropean Union (particular) Country VAT\r\nRest of the world 0% VAT\r\n",
+                "cId": "Zone",
+                "lBrowserDefault": ".T.",
+                "oStyle":
+                {
+                  "Margin_bottom": "10px;"
+                }
+              },
+              "events": {},
+              "controls": []
+            },
+            {
+              "class": "WEdit",
+              "name": "Amount",
+              "properties":
+              {
+                "cId": "Amount",
+                "cLabel": "Total amount:",
+                "oStyle": {}
+              },
+              "events": {},
+              "controls": []
+            },
+            {
+              "class": "WEdit",
+              "name": "Address",
+              "properties":
+              {
+                "cId": "Address",
+                "cLabel": "Address:",
+                "oStyle": {}
+              },
+              "events": {},
+              "controls": []
+            },
+            {
+              "class": "WEdit",
+              "name": "City",
+              "properties":
+              {
+                "cId": "City",
+                "cLabel": "City:",
+                "oStyle": {}
+              },
+              "events": {},
+              "controls": []
+            },
+            {
+              "class": "WEdit",
+              "name": "Postal_code",
+              "properties":
+              {
+                "cId": "Postal_code",
+                "cLabel": "Postal code:",
+                "oStyle": {}
+              },
+              "events": {},
+              "controls": []
+            },
+            {
+              "class": "WEdit",
+              "name": "Country",
+              "properties":
+              {
+                "cId": "Country",
+                "cLabel": "Country:",
+                "oStyle": {}
+              },
+              "events": {},
+              "controls": []
+            },
+            {
+              "class": "WEdit",
+              "name": "Email",
+              "properties":
+              {
+                "cId": "Email",
+                "cInputMode": "email",
+                "cLabel": "Email: (required)",
+                "oStyle": {}
+              },
+              "events": {},
+              "controls": []
+            },
+            {
+              "class": "WParagraph",
+              "name": "user_18",
+              "properties":
+              {
+                "cId": "user_18",
+                "cText": "Payment method:",
+                "oStyle": {}
+              },
+              "events": {},
+              "controls": []
+            },
+            {
+              "class": "WRadioMenu",
+              "name": "Payment_method",
+              "properties":
+              {
+                "aItems": "Stripe\r\nBank transfer",
+                "cId": "Payment_method",
+                "cTitle": "Payment method:",
+                "lHorizontal": ".T.",
+                "oStyle": {}
+              },
+              "events": {},
+              "controls": []
+            },
+            {
+              "class": "WParagraph",
+              "name": "user_20",
+              "properties":
+              {
+                "cId": "user_20",
+                "cText": "Comments:",
+                "oStyle": {}
+              },
+              "events": {},
+              "controls": []
+            },
+            {
+              "class": "WTextArea",
+              "name": "Comments",
+              "properties":
+              {
+                "cId": "Comments",
+                "nCols": "80",
+                "nRows": "5",
+                "oStyle": {}
+              },
+              "events": {},
+              "controls": []
+            }
+          ]
+        },
+        {
+          "class": "WFlexRow",
+          "name": "user_7",
+          "properties":
+          {
+            "cId": "user_7",
+            "cJustifyContent": "center",
+            "oStyle":
+            {
+              "Margin_bottom": "50px;"
+            }
+          },
+          "events": {},
+          "controls":
+          [
+            {
+              "class": "WButton",
+              "name": "btnOk",
+              "properties":
+              {
+                "cDisplayType": "filled",
+                "cId": "btnOk",
+                "cText": "OK",
+                "oStyle": {}
+              },
+              "events": {},
+              "controls": []
+            },
+            {
+              "class": "WButton",
+              "name": "btnCancel",
+              "properties":
+              {
+                "cDisplayType": "filled",
+                "cId": "btnCancel",
+                "cText": "CANCEL",
+                "oStyle": {}
+              },
+              "events": {},
+              "controls": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class": "WForm",
+      "name": "articulos",
+      "properties":
+      {
+        "cId": "articulos",
+        "oStyle": {}
+      },
+      "events": {},
+      "controls":
+      [
+        {
+          "class": "WButton",
+          "name": "articulos_1",
+          "properties":
+          {
+            "cDisplayType": "filled",
+            "cId": "articulos_1",
+            "cText": "Aceptar",
+            "oStyle": {}
+          },
+          "events": {},
+          "controls": []
+        }
+      ]
+    }
+  ],
+  "system": "Materialize"
+}

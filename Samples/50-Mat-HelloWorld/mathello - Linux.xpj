@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<Project>
+   <Type Value="cgi"/>
+   <Description Value="HelloWorldLinux"/>
+   <Output Value="/usr/lib/cgi-bin/mathello.xaweb"/>
+   <XailerVersion Value="9.2"/>
+   <Compiler Value="Harbour"/>
+   <CCompiler Value="GCCLinux"/>
+   <Font Value="MS Sans Serif,8"/>
+   <MainModule Value="HelloWorld.prg"/>
+   <MultipleInstances Value="Y"/>
+   <XPManifest Value="Y"/>
+   <Icon Value=""/>
+   <Parameters Value=""/>
+   <CgiHeaders Value=""/>
+   <CgiPost Value=""/>
+   <Charset Value="UTF-8"/>
+   <Version>
+      <Version Value="1.0"/>
+      <Release Value="0"/>
+      <Build Value="0"/>
+      <Company Value="-----"/>
+      <CopyRight Value=""/>
+      <TradeMarks Value=""/>
+      <Comments Value=""/>
+   </Version>
+   <Directories>
+      <SourceDir Value="Source"/>
+      <IncludeDir Value="Include"/>
+      <ResourceDir Value="Resource"/>
+      <ObjDir Value="Obj"/>
+      <WWWDir Value="www"/>
+   </Directories>
+   <Options>
+      <AutomaticMemvarDeclaration Value="N"/>
+      <DebugInfo Value="N"/>
+      <SuppressLineNumberInformation Value="N"/>
+      <SuppressShortcutting Value="N"/>
+      <WarnningLevel Value="1"/>
+      <MoreOptions Value=""/>
+      <MoreCOpt Value=""/>
+      <MapFile Value="N"/>
+      <ConsoleMode Value="N"/>
+      <MoreLinkOpt Value=""/>
+   </Options>
+   <Apache>
+      <Run Value="1"/>
+      <Url Value="http://localhost:80/cgi-bin/mathello.xaweb"/>
+      <ExternalNavigator Value="Y"/>
+      <Copy Value="N"/>
+      <Dir Value=""/>
+      <FileTypes Value="htm,html,js,css,png,jpg,jpeg,gif,webp,ico"/>
+   </Apache>
+   <Export>
+      <Dir Value=""/>
+      <Source Value="Y"/>
+      <Exe Value="N"/>
+      <Bin Value="N"/>
+      <Resource Value="Y"/>
+      <ResourceAll Value="N"/>
+      <ErrorLog Value="N"/>
+      <Subprojects Value="Y"/>
+   </Export>
+   <Clean>
+      <All Value="N"/>
+   </Clean>
+   <FinalExe>
+      <FullCompile Value="N"/>
+      <TlbInfo Value="N"/>
+      <UpxCompress Value="N"/>
+      <CompressFlags Value=""/>
+      <SignApp Value="N"/>
+      <CertName Value=""/>
+      <Installer Value="N"/>
+      <InstallerFlags Value=""/>
+      <SignInstaller Value="N"/>
+      <InstallerFile Value=""/>
+   </FinalExe>
+   <VCS>
+      <Type Value="None"/>
+   </VCS>
+   <Files>
+      <File Filename="DocMain.prg"/>
+      <File Filename="HelloWorld.prg" Charset="0"/>
+   </Files>
+   <Libraries>
+      <Library Filename="Z:\xaWeb\lib\linux\xaWebMaterialize"/>
+      <Library Filename="Z:\xaWeb\Lib\linux\xaWeb"/>
+      <Library Filename="Z:\xaWeb\Lib\linux\WxaWeb"/>
+      <Library Filename="[xailer]CGILinux"/>
+      <Library Filename="[xailer]SQLiteLinux" Link="N"/>
+      <Library Filename="[xailer]mariadb" Link="N"/>
+      <Library Filename="[xailer]mysql" Link="N"/>
+      <Library Filename="[harbour]hbextern"/>
+      <Library Filename="[harbour]hbdebug"/>
+      <Library Filename="[harbour]hbvm"/>
+      <Library Filename="[harbour]hbrtl"/>
+      <Library Filename="[harbour]hblang"/>
+      <Library Filename="[harbour]hbcpage"/>
+      <Library Filename="[harbour]gtcgi"/>
+      <Library Filename="[harbour]gtpca" Link="N"/>
+      <Library Filename="[harbour]gtstd" Link="N"/>
+      <Library Filename="[harbour]gttrm"/>
+      <Library Filename="[harbour]hbrdd"/>
+      <Library Filename="[harbour]hbuddall"/>
+      <Library Filename="[harbour]hbusrrdd"/>
+      <Library Filename="[harbour]rddntx"/>
+      <Library Filename="[harbour]rddcdx"/>
+      <Library Filename="[harbour]rddnsx"/>
+      <Library Filename="[harbour]rddfpt"/>
+      <Library Filename="[harbour]hbhsx"/>
+      <Library Filename="[harbour]hbsix"/>
+      <Library Filename="[harbour]hbmacro"/>
+      <Library Filename="[harbour]hbcplr"/>
+      <Library Filename="[harbour]hbpp"/>
+      <Library Filename="[harbour]hbcommon"/>
+      <Library Filename="[harbour]hbmxml"/>
+      <Library Filename="[harbour]mxml"/>
+      <Library Filename="[harbour]m"/>
+      <Library Filename="[harbour]hbpcre"/>
+      <Library Filename="[harbour]hbmzip"/>
+      <Library Filename="[harbour]minizip"/>
+      <Library Filename="[harbour]hbzlib"/>
+      <Library Filename="[harbour]hbgd"/>
+      <Library Filename="[gcclinux]uuid"/>
+      <Library Filename="[gcclinux]pthread"/>
+      <Library Filename="[gcclinux]dl"/>
+      <Library Filename="[gcclinux]gd"/>
+   </Libraries>
+</Project>
+

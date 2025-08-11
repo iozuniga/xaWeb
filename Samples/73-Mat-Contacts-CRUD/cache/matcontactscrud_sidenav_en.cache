@@ -1,0 +1,18 @@
+    <ul id="sidenav" class="sidenav">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="/assets/fondo.jpg"></img>
+          </div>
+          <a class="emptyref">
+            <img src="/assets/logo_square.png" class="circle"></img>
+          </a>
+          <a class="white-text name emptyref">
+            <span>xaWeb</span>
+          </a>
+          <a class="white-text email emptyref">
+            <span>Materialize - DBF CRUD demo</span>
+          </a>
+        </div>
+      </li>
+    </ul>

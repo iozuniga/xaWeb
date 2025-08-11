@@ -1,0 +1,110 @@
+/*
+Important note:
+
+This sample needs a MySql/Maria DB server running in local host with the
+following credentials:
+ - user: root
+ - password: xailer
+
+The database server must have a 'Neptuno' database with the needed table: 'clientes'
+The WSL system precocked by xaWeb at:
+
+https://wiki.xailer.com/doku.php?id=importacion.del.wsl.creado.por.xailer
+
+Has all you need.
+
+*/
+
+#include "xaWeb.ch"
+
+CLASS WDocMain FROM WDoc
+
+   METHOD CreateDoc()
+
+END CLASS
+
+//------------------------------------------------------------------------------
+
+METHOD CreateDoc() CLASS WDocMain
+
+   LOCAL oDs AS CLASS WXailerWebDataSource
+   LOCAL aData, aHeader
+   LOCAL cJs, cCode
+
+   WITH OBJECT WBasicContext():New( Self )
+      :cTheme := "light"
+   END WITH
+
+   TEXT INTO cJs
+      function showCode() {
+         const ele = document.getElementById("source");
+         if (ele) {
+            ele.value = xa_b64toUnicode(ele.value);
+            ele.hidden = false;
+            document.getElementById("btnsource").style.display = "none";
+         }
+      }
+   ENDTEXT
+
+   WITH OBJECT oDs := WXailerWebDataSource():New( Self )
+#ifndef _LINUX_
+      // Configuration for integrated IDE Webview
+      :cPhpRunner := "z:\xampp\php\php.exe"
+      :cPhpModule := "\php\Neptuno.php"
+
+      // Configuration for Apache on external navigator
+      // Neptuno.php should be copied to your xampp\htdocs directory
+      // Change output file to xampp\cgi-bin
+
+#else
+      :cPhpModule := "php/Neptuno.php"
+#endif
+      :cDatabase := "neptuno"
+      //aData := :QueryArray( "select * from clientes", @aHeader )
+      cCode := ToString( :Ping() )
+      ECHO cCode INTO Self
+      aData := {}
+   END WITH
+
+   ECHO "<h1>xaWeb: Xailer WebDatasource MariaDB/MySql sample</h1>" INTO Self
+/*
+   WITH OBJECT WTable():New( Self )
+      :cId := "table1"
+      :cHeaderBkColor := "green"
+      :cFooterBkColor := "green"
+      :cMaxHeight := "600px"
+      :LoadData( aHeader )
+      :LoadData( aData )
+      :nHeader := 1
+      :Create()
+   END WITH
+*/
+   ::AddScript( cJs )
+
+   ECHO "<hr>" INTO Self
+
+   FILE "DocMain.prg" INTO cCode
+
+   WITH OBJECT WButton():New( Self )
+      :cText := "This button shows xaWeb source code"
+      :Onclick := "showCode"
+      :cId := "btnsource"
+      :Create()
+   END WITH
+
+   WITH OBJECT WTextArea():New( Self )
+      :oStyle:Margin_top := "20px"
+      :oStyle:Font_Family := "monospace"
+      :nCols := 100
+      :cId   := "source"
+      :nRows := 40
+      :cText := HB_Base64Encode( cCode )
+      :lReadOnly := .t.
+      :lVisible := .f.
+      :Create()
+   END WITH
+
+RETURN nil
+
+//------------------------------------------------------------------------------
+

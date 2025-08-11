@@ -1,0 +1,33 @@
+      <nav id="navbar" style="background:var(--md-sys-color-primary);">
+        <div class="nav-wrapper">
+          <a class="brand-logo emptyref">
+            <img alt="DBF CRUD demo" src="/assets/logo_square.png" height="64" width="64" class=" hide-on-med-and-down"></img>
+            <span style="vertical-align:top;white-space:nowrap;">DBF CRUD demo</span>
+          </a>
+          <a class="sidenav-trigger emptyref" data-target="Default_0">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class=" hide-on-med-and-down right">
+            <li>
+              <a data-syncro="Default_0_0" onclick='xa_showSection("FormSection", true, "myform", "table1", true);'>New 
+                <i class="right material-icons" style="margin-left:8px;">person_add</i>
+              </a>
+            </li>
+            <li id="navbar_1">
+              <a class="disabled" data-syncro="Default_0_1" onclick='xa_showSection("FormSection", true, "myform", "table1", false);'>Edit
+                <i class="right material-icons" style="margin-left:8px;">manage_accounts</i>
+              </a>
+            </li>
+            <li id="navbar_0" onclick='xa_showModal("xaWeb: DBF Table CRUD", "Confirm row deletion?", [{label:"OK",onClick:(e)=>{xa_fetchTableSelectedRow( "table1", "navbar_0", "xa_delRowTable", "/matcontactscrud.xaweb?service=wdocmain-Srv_TableDelete",{"headers":{"Content-type":"application/json"},"method":"GET","keepalive":""},null,{});},triggerClose: true},{label:"Cancel",onClick:(e)=>{},triggerClose: true}])'>
+              <a href="#" class="disabled" data-syncro="Default_0_2">Delete
+                <i class="right material-icons" style="margin-left:8px;">person_remove</i>
+              </a>
+            </li>
+            <li onclick='xa_pdfAutoTable({"title":"xaWeb DBF Crud demo","subTitle":"Web development fast & easy! ","logo":"/assets/logo_square.png","filename":"autotable.pdf","html":"#table1","styles":{"font":"times","cellWidth":"auto"}});'>
+              <a href="#" data-syncro="Default_0_3">Print
+                <i class="right material-icons" style="margin-left:8px;">print</i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>

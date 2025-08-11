@@ -1,0 +1,35 @@
+      <form method="post" name="myform" autocomplete="on" id="myform" class="xa-form__form Container" style="width: 80ch;" data-document="wdocmain" data-table="table1" onsubmit="(function(){return {'service':'Srv_TableEdit','content':'application/json'};})()">
+        <fieldset name="User data" class="xa-fieldset">
+          <legend>Personal data</legend>
+          <div class="input-field xa-input outlined">
+            <input max="99999" min="1" size="5" placeholder=" " type="number" name="Id" id="Id" class="xa-input__input" data-field="Id" data-disabled-on-edit="true"></input>
+            <label for="Id">Id:</label>
+            <span class="xa-input__error supporting-text"></span>
+          </div>
+          <div class="input-field xa-input outlined">
+            <input maxlength="50" minlength="4" placeholder=" " type="text" name="First" id="first" class="xa-input__input" data-field="First"></input>
+            <label for="first">First:</label>
+            <span class="xa-input__error supporting-text"></span>
+          </div>
+          <div class="input-field xa-input outlined">
+            <input maxlength="50" minlength="4" placeholder=" " type="text" name="Last" id="last" class="xa-input__input" data-field="Last"></input>
+            <label for="last">Last:</label>
+            <span class="xa-input__error supporting-text"></span>
+          </div>
+          <div class="input-field xa-input outlined">
+            <input maxlength="50" minlength="10" placeholder=" " type="text" name="Street" id="street" class="xa-input__input" data-field="Street"></input>
+            <label for="street">Street:</label>
+            <span class="xa-input__error supporting-text"></span>
+          </div>
+          <div class="input-field xa-input outlined">
+            <input maxlength="50" minlength="4" placeholder=" " type="text" name="City" id="city" class="xa-input__input" data-field="City"></input>
+            <label for="city">City:</label>
+            <span class="xa-input__error supporting-text"></span>
+          </div>
+        </fieldset>
+        <div style="padding:1em 0em;">
+          <button type="submit" id="btnOk" class="btn filled emptyref">Ok</button>
+          <a id="btnCancel" class="btn filled emptyref" onclick="(function(){xa_showSection('FormSection', false, 'myform');})()">Cancel</a>
+          <a id="btnReset" class="btn filled emptyref" onclick="(function(){document.getElementById('myform').reset();})()">Reset</a>
+        </div>
+      </form>
