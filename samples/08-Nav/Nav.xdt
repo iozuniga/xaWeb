@@ -1,9 +1,0 @@
-[OPTIONS]
-LockControls=.F.
-[DESKTOP]
-1={XailerWebLinux}zLink.prg,52,42,52,42,18,0,810
-2={XailerWebLinux}zDiv.prg,33,18,33,18,5,0,810
-3={XailerWebLinux}zNav.prg,17,16,17,16,0,0,420
-4=nav.prg,0,0,0,0,0,0,520
-5=docmain.prg,8,0,8,0,0,0,690
-Current=5

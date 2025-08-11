@@ -1,2 +1,0 @@
-xw_temp=document.getElementById("button2");if (xw_temp) xw_temp["innerHTML"]="Button changed within Harbour code!";delete xw_temp;
-Execute time in milliseconds:         10

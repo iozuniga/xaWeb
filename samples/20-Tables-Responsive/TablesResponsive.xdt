@@ -1,6 +1,0 @@
-[OPTIONS]
-LockControls=.F.
-[DESKTOP]
-1=TablesResponsive.prg,10,0,10,0,0,0,300
-2=DocMain.prg,19,17,19,17,7,0,300
-Current=2

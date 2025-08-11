@@ -1,9 +1,0 @@
-[OPTIONS]
-LockControls=.F.
-[DESKTOP]
-1=zXWButton.prg,14,0,14,0,0,0,420
-2=Source\js\xw-components.js,6,0,6,0,0,0,1164
-3={XailerWebLinux}Internal\zDoc.prg,301,29,301,29,275,0,1330
-4=xw-Buttons.prg,7,0,7,0,0,0,520
-5=DocMain.prg,29,0,29,0,0,0,890
-Current=5

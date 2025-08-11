@@ -1,5 +1,0 @@
-[OPTIONS]
-LockControls=.F.
-[DESKTOP]
-1=DocMain.prg,0,3,0,3,0,0,940
-Current=1

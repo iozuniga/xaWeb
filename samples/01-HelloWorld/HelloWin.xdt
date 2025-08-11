@@ -1,6 +1,0 @@
-[OPTIONS]
-LockControls=.F.
-[DESKTOP]
-1=HelloWorld.prg,0,0,0,0,0,0,520
-2=DocMain.prg,0,0,0,0,0,0,810
-Current=2

@@ -1,7 +1,0 @@
-[OPTIONS]
-LockControls=.F.
-[DESKTOP]
-1=Images.prg,13,0,13,0,0,0,280
-2=DocMain.prg,24,3,24,47,0,0,280
-3=error.log,27,8,27,8,0,0,280
-Current=2
